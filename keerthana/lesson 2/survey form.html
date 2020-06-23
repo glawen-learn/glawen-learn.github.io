@@ -1,0 +1,52 @@
+<DOCTTYPE html> 
+<html>
+       <head><title>survey-form</title>
+<style>
+body{
+background-image:url("pic.jpg"); 
+background-attachment:fixed;
+margin-left:200px;
+}
+#title{
+       text-align:center;
+      color:red;
+font-size:100px;
+        }
+#description{
+             color:green;
+font-size:50px;
+              }
+#survey-form{
+             background-color:skyblue;
+font-size:30px;
+             }
+
+</style> 
+</head>
+<body>
+<h1 id="title">Free Code Camp Survey Form</h1>
+<p id="description">"Thankyou for taking the time to help us to improve the platform"</p>   
+<form action= "submit" id="survey-form"><fieldset><legend>survey-form</legend>
+<label for="email">Name:</label><input type="text" id="name" name="Name" placeholder="Enter your name" required><br>
+<label for="number">Email:</label><input type="email" id="email" name="email"pattern="[^@]*@[^@]*" placeholder="Enter your email" required><br>
+<label for="name">  Age  :</label><input type="number" id="numbers"min="1" max="100" placeholder="Enter your Age"required><br> 
+<label>Which option best describes your current role</label><br>
+<select name="dropdown">
+<option value="select your current role">select your current role</option>
+<option value="student">student</option>
+<option value="full time job">full time job</option>
+<option value="other">other</option></select><br>
+<label>would you recommend freecodecamp to a friend</label><br>
+<input type="radio"name="recommend" value="Definitely"><label>Definitely</label><br>
+<input type="radio" name="recommend"value="May be"><label>May be</label><br>
+<input type="radio"name="recommend" value="Not Sure"><label>Not Sure</label><br>
+<label>What would you like to see improved?</label><br>
+<input type="checkbox"value="front-end"><label>front-end</label><br>
+<input type="checkbox"value="back-end"><label>back-end</label><br>
+<input type="checkbox"value="videos"><label>videos</label><br>
+<input type="checkbox"value="challenges"><label>challenges</label><br>
+<label>Any comments or suggestions<br><textarea rows="4"cols="50"placeholder="Enter your comments here......"></textarea></label></br>
+<input type ="submit" value="submit"/></form>
+ </fieldset></h5>
+</body>
+</html>
