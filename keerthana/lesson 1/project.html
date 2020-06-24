@@ -1,8 +1,9 @@
-     <html>
+<DOCTTYPE html> 
+<html>
 <head>
 <style>
 body{
-background-image:url("pic.jpg");
+background-image:url("pic.jpg"); 
 background-attachment:fixed;
 margin-left:200px;
 }
@@ -25,12 +26,12 @@ font-size:30px;
 <body>
 <h1 id="title">Free Code Camp Survey Form</h1>
 <p id="description">"Thankyou for taking the time to help us to improve the platform"</p>   
-<form action= "submit" id="survey-form"><fieldset><legend>survey-form</legend>
-<label>Name:</label><input type="text" name="Name" placeholder="Enter your name" required><br>
-<label>Email:</label><input type="email" name="email"pattern="[^@]*@[^@]*" placeholder="Enter your email" required><br>
-<label>  Age  :</label><input type="number" min="1" max="100" placeholder="Enter your Age"required><br> 
-<label>Which option best describes your current role</label> <br>
-<select name="dropdown" >
+<form action= "submit" id="survey-form"> <fieldset><legend>survey-form</legend>
+<label for="email">Name:</label><input type="text" id="name" name="Name" placeholder="Enter your name" required><br>
+<label for="age">Email:</label><input type="email" id="email" name="email"  placeholder="Enter your email" required><br>
+<label for="name">  Age  :</label><input type="number" id="number"min="1" max="100" placeholder="Enter your Age"required><br> 
+<label>Which option best describes your current role</label><br>
+<select name="dropdown">
 <option value="select your current role">select your current role</option>
 <option value="student">student</option>
 <option value="full time job">full time job</option>
