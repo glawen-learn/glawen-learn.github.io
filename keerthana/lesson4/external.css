@@ -1,0 +1,31 @@
+div{
+background-color: black;
+color: white;
+padding: 10px;
+}
+pre{
+   border: 1px solid green;
+  background-color: lightgray;
+   margin-right: 300px;
+padding: 10px;
+}
+
+div.absolute{
+    border: 1px solid green;
+     position: absolute;
+   top: 150px;
+    right: 10px;
+    left: 1160px;
+    padding: 10px;
+ background-color:lightgray;
+color:black;
+   
+}
+p.padding{
+     background-color:black;
+     padding-top:10px;
+     padding-right:300px;
+    padding-bottom:10px;
+    padding-left:500px;
+   color:white;
+}
