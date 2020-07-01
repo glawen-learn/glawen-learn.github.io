@@ -1,27 +1,30 @@
-div{
+#firstrow{
 background-color: black;
 color: white;
 padding: 10px;
 }
-pre{
+#firstcolom{
+width: 75%;
+min-height: 50px;
    border: 1px solid green;
   background-color: lightgray;
-   margin-right: 300px;
+   margin-right: 25px;
+margin-top: 10px;
 padding: 10px;
 }
 
-div.absolute{
+#secondcolom{
     border: 1px solid green;
      position: absolute;
-   top: 150px;
-    right: 10px;
-    left: 1160px;
     padding: 10px;
  background-color:lightgray;
-color:black;
-   
+margin-right: 10px;
+top: 150px;
+left: 1200px;
+width: 20%;
+color: black;
 }
-p.padding{
+#row{
      background-color:black;
      padding-top:10px;
      padding-right:300px;
