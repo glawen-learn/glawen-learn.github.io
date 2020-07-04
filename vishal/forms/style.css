@@ -1,0 +1,77 @@
+#title{
+    text-align: center;
+    color:#00ccff;
+}
+
+p,
+h3{
+    color: white;
+    text-align: center;
+
+    
+}
+
+body{
+    background-color: #669999;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+   margin: 0;
+}
+#servey-form{
+    background-color:#d1e0e0;
+    margin: auto 0px;
+    padding: 5px 20px;
+    width: 450px;
+    height: 135vh;
+    margin: 0 auto;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 5px;
+    
+
+}
+
+
+#servey-form input {
+    border: 1px solid;
+    display: block;
+    position: relative;
+    left: 60px;
+    bottom: 21px;
+    width: 350px;
+    padding: 8px;
+
+    
+    
+}
+
+#dropdown{
+    width:350px;
+    padding: 5px;
+}
+#servey-form input-radio{
+    width: 500px;
+}
+#Submit {
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: greenyellow;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+    
+#comments{
+    margin-top: 20px;
+    width: 400px;
+    height: 250px;
+    padding: 40px 20px;
+}  
+
+
+
