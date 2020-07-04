@@ -1,0 +1,40 @@
+#firstRow{
+width:98.7%;
+text-align:center;
+background-color:DeepPink;
+color:white;
+padding:10px;
+text-indent: 50px;
+ text-shadow: 2px 2px 5px red;
+border-style: groove;
+}
+#firstcolumn
+{
+width:1105px;
+min-height: 220px;
+background-color: Violet;
+border-style: groove;
+margin: 10px 0px 1px 2px;
+padding:2px 2px 2px 20px;
+}
+#secondColumn{
+margin-right:60px;
+top:-450px;
+left: 1140px;
+bottom:0px;
+width:330px;
+min-height:230px;
+border-style: groove;
+background-color:Cyan;
+position:relative;
+padding: 10px 10px 7px 20px;
+}
+.copyright
+{
+   background-color:gray;
+   color:white;
+   text-align:center;
+   margin:-280px;
+   padding:15px;
+width:116.6%;
+}
