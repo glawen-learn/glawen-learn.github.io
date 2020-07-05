@@ -1,0 +1,17 @@
+.name{
+text-align:center;
+}
+body{
+background-image: linear-gradient(to right, rgba(400,40,0,30), rgba(20,100,40,40));
+}
+img{
+border-radius:50%;
+postion:center;
+}
+.pic{
+float: left;
+width: 50px;
+border-radius:50%;
+}
+#p{
+margin-left:250px;}
