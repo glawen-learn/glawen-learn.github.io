@@ -1,11 +1,11 @@
+body{ background-image: linear-gradient(to right, rgba(25,20,30,0), rgba(4,0,0,1));}
 #firstRow{
 width:98.7%;
 text-align:center;
-background-color:DeepPink;
+background-color: DeepPink;
 color:white;
 padding:10px;
-text-indent: 50px;
- text-shadow: 2px 2px 5px red;
+ text-shadow: 2px 2px 5px blue;
 border-style: groove;
 }
 #firstcolumn
@@ -25,7 +25,7 @@ bottom:0px;
 width:330px;
 min-height:230px;
 border-style: groove;
-background-color:Cyan;
+background-color: Cyan;
 position:relative;
 padding: 10px 10px 7px 20px;
 }
