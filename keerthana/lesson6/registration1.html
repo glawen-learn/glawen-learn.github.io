@@ -1,0 +1,57 @@
+<html>
+<head><title>trains</title>
+<link rel="shortcut icon" type="image/ico" href="train.ico">
+
+<style>
+body{
+background: url("train.png");
+text-align:center;
+
+}
+h1{
+ text-align:center;
+ color:white;
+ background-color:blue;
+ margin-top:5px;
+ margin-bottom:5px;
+ margin-left:400px;
+ margin-right:400px;
+}
+</style>
+</head>
+<body>
+<h1>REGISTRATION FOR IRCTC</h1>
+<form action="mainpage.html" method="post"><br>
+<br>
+<label for="name">Name  :</label><input type="text" id="name" name="Name" placeholder="Enter your name" required><br><br>
+<label for="email">Email:</label><input type="email" id="email" name="email"pattern="[^@]*@[^@]*" placeholder="Enter your email" required><br><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male"/><label>male</label>
+<input type="radio" name="gender" value="female"/><label>female</label>
+<br><br>
+<label>Country </label>
+<select name="dropdown">
+<option value="Select Country">Select Country</option>
+<option value="india">india</option>
+<option value="africa">africa</option>
+<option value="china">china</option>
+<option value="pakistan">pakistan</option>
+<option value="other">other</option>
+</select><br><br>
+<label>CITY:</label>
+<select name="dropdown">
+<option value="select city">select city</option>
+<option value="banglore">Banglore</option>
+<option value="manglore">Manglore</option>
+<option value="chennai">Chennai</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="pune">Pune</option>
+</select><br><br>
+<textarea rows="4" cols="50" placeholder="ENTER ADDRESS...."></textarea><br><br>
+<input type="submit" value="register"/>
+</form>
+</body>
+</html>
+
+
+

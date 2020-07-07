@@ -1,0 +1,101 @@
+.parallex{
+
+ background-image: url("image1.jpg");
+ 
+  min-height: 800px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallex1{
+background-image: url("image2.jpg");
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  }
+  h1{
+  position: absolute;
+    top: 50%;
+    margin-left:500px;
+	margin-right:600px;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+	background-color:gray;
+	color:white;
+	
+	}
+	.para{ 
+	background-color:silver;
+	display:block;
+	padding: 50px 80px;
+	}
+	.parallex2{
+	background-image: url("image3.jpg");
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  }
+h3{ 
+position: absolute;
+    
+    margin-left:500px;
+	margin-right:600px;
+    color: blue;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+	top:1500px;
+
+	
+	}
+h2{text-align: center;}	
+.para1{
+background-color:black;
+	display:block;
+	padding: 70px 90px;
+color:white;
+}
+h4{
+position: absolute;
+    
+    margin-left:500px;
+	margin-right:600px;
+    color: red;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+	top:2500px; 
+	}
+	.parallex3{
+	background-image: url("image6.jpg");
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  }
+  .para2{
+  background-color:pink;
+	display:block;
+	padding: 70px 90px;
+color:white;
+}
+h5{
+position: absolute;
+    
+    margin-left:500px;
+	margin-right:600px;
+    color: orange;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+	top:3500px;
+	}

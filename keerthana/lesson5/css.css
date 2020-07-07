@@ -1,0 +1,23 @@
+.thumbnail {
+background-color: #eee;
+text-align:center;
+}
+    body {
+margin-top: 40px;
+margin-right:300px;
+margin-bottom:40px;
+margin-left:300px;
+}
+ .thumbnail .caption {
+background-color: #ddd;
+text-align:center;
+}
+img{
+border-radius:50%;
+position:center;
+}
+.text{
+border-width: 5px;
+text-align: center;
+background-color: #ddd;
+}
