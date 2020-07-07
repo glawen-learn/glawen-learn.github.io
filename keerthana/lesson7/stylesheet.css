@@ -48,7 +48,7 @@ position: absolute;
     
     margin-left:500px;
 	margin-right:600px;
-    color: blue;
+    color: PaleGoldenRod;
     font-size: 30px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -56,7 +56,8 @@ position: absolute;
 
 	
 	}
-h2{text-align: center;}	
+h2{text-align: center;
+font-size:45px;}	
 .para1{
 background-color:black;
 	display:block;
