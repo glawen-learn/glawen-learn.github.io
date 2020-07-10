@@ -1,0 +1,90 @@
+.container{
+ background-image:url("Parallax1.jpg");
+ min-height:750px;
+ background-attachment:fixed;
+ background-position:center;
+ backgrouund-repeat:no-repeat;
+ background-size:cover;}
+.container1{
+  background-color:pink;
+  display:block;
+  padding:50px 20px;
+  color:RoyalBlue;}
+.container3{
+  background-image: url("Parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;}
+.container4{
+  background: linear-gradient(to bottom, #39ccff 0%, #ff99cc 100%);
+  display:block;
+  padding: 70px 90px;
+  color:white;}
+.container5{
+  background-image:url("Parallax3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;}
+.container6{
+  background-image: linear-gradient(to right, rgba(255,40,100,10), rgba(50,0,90,80));
+  display:block;
+  padding: 150px 90px;
+  color:white;}
+.container7{
+  background-image: url("Parallax4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;}
+
+
+h1{
+ text-align:center;
+ color:GoldenRod;
+ font-size:90px;}
+h2{
+ position:absolute;
+ margin:20px 50px 0px 10px;
+ color:Chartreuse;
+ font-size:50px;
+ letter-spacing:5px;
+ top:1200px;
+ text-align:right;
+ padding:20px;}
+h3{
+ position:absolute;
+ margin:10px 600px 0px 0px;
+ color:yellow;
+ font-size:70px;
+ letter-spacing:2px;
+ top:2200px;
+ text-align:center;}
+h4{
+ position:absolute;
+ margin:0px 50px 0px 10px;
+ color:Wheat;
+ font-size:80px;
+ letter-spacing:5px;
+ top:3500px;
+ text-align:right;
+ padding:20px;}
+h5{
+ position:absolute;
+ margin:1500px 50px 0px 60px;
+ color:PapayaWhip;
+ font-size:50px;
+ letter-spacing:5px;
+ top:2060px;
+ text-align:center;
+ padding:20px;}
+p{
+font-size:15px;
+font-style:Lucida Calligraphy;
+}
+h6{
+color:snow ;font-size:20px; text-align:center; letter-spacing:1px;}

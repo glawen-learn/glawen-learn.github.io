@@ -1,0 +1,23 @@
+body{
+    background-image:url("swa.jpeg");
+}
+.rock{
+     text-align:center;
+     background-color:black;
+     color:white;
+     padding:10px;
+     margin-left:30%;
+     margin-right:30%; 
+}
+.rock1{
+      text-align:center;
+      background-color:gray;
+      color:white;
+      padding:20px;
+      margin-left:10%;
+      margin-right:10%;
+}
+.rock2{
+     background-color:pink;
+     margin:30% 30% 30% 30%;
+}
