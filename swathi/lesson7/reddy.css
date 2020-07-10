@@ -1,0 +1,107 @@
+.swathi{
+     background-image:url("mom.jpg");
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 height:500px;
+	 width:100%;
+	 }
+.swathi1{
+     text-align:center;
+     color:white;
+	 font-size:20px;
+	 padding-top:30px;
+}  
+.swathi2{
+     text-align:center;
+     color:black;
+	 background-color:silver;
+    margin-top:-25px;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.reddy2{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+img{
+	
+	 height:300px;
+	 width:300px;
+	
+}
+.swathi4{
+	 display:block; 
+	 
+}
+.content{
+	text-align:left;
+	padding:16px;
+	margin:20px;
+}
+img{
+	height:300px;
+	width:300px;
+	
+}
+.swathi5{ 
+     display:block;
+}
+.content1{
+	 text-align:left;
+	 padding:16px;
+	 margin:20px;
+}
+img{
+	height:300px;
+	width:300px;	 
+} 
+.swathi6{ 
+     display:block;
+}
+.content2{
+	 text-align:left;
+	 padding:16px;
+	 margin:20px;
+}
+.swathi7{
+	 text-align:center;
+     color:black;
+	 background-color:white;
+     padding-top:60px;
+	 padding-bottom:60px;
+}
+.reddy3{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+.swathi8{
+	   text-align:center;
+	   background-color:blue;
+	   color:white;
+	   padding-top:70px;
+	   padding-bottom:70px;
+
+}
+.swathi9{
+	   text-align:center;
+	   background-color:black;
+	   color:white;
+	   padding-top:70px;
+	   padding-bottom:70px;
+}
+.reddy4{
+	display:block;
+}
+.reddy5{
+	 display:grid;
+	 grid-template-columns:1fr 1fr 1fr;
+	 background-color:black;
+	 color:white;
+}
+.swathi10{
+	background-color:black;
+	color:white;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+}
