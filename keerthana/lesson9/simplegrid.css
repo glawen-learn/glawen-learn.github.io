@@ -39,9 +39,23 @@ border-bottom: 1px dotted #bbb;
 	padding:50px;
 	
 	}
-	.line4{
-		border-bottom : 1px dotted #bbb;
-		padding-bottom: 20px;
-		
-     
+.third{
+		display:grid;
+	grid-template-columns:1fr 1fr;
 	}
+.line4{
+	border-right: 1px dotted #bbb;
+     padding-right: 20px;
+}
+.padding{
+	padding-left:30px;
+}
+.line5{	
+  border-bottom: 1px dotted #bbb;
+  padding-bottom:10px;
+}
+     
+	
+	
+		
+	
