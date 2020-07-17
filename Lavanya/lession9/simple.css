@@ -14,6 +14,7 @@ padding-bottom:20px;
 font-family:"Helvetica neue", Helvetic,arial, sans-serif;
 }
 
+
 .container1{
 	display:grid;
 	grid-template-columns: auto auto;
