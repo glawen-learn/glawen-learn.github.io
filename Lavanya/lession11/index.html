@@ -1,63 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bootstrap Grid System</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<style>
-
-</style>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="jumbotron jumbotron-fluid">
+<h1>web page</h1>
+</div>
 <div class="container-fluid">
-<div class="row">
-<div class="col-md-4" style="background-color:aqua; border:2px solid red;">
-<h1> A. P. J. Abdul Kalam</h1>
-<p>Avul Pakir Jainulabdeen Abdul Kalam (/ˈæbdəl kəˈlɑːm/ (About this soundlisten); 
-15 October 1931 – 27 July 2015) was an Indian aerospace scientist and politician who served as the 11th President of India from 2002 to 2007.
- He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering. He spent the next four decades as a scientist 
- and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Or</p>
-</div>
-<div class="col-md-4" style="background-color:BlanchedAlmond; border:2px solid blue;">
-<h1>B. R. Ambedkar</h1>
-<p>Bhimrao Ramji Ambedkar (14 April 1891 – 6 December 1956), also known as Babasaheb Ambedkar, was an Indian jurist, economist, politician and social reformer, who inspired the Dalit Buddhist movement and campaigned against social discrimination towards the untouchables (Dalits). He was independent India's first Minister of Law and Justice, and the chief architect of the Constitution of India.
-Ahrked by his polit initiating mass conversions of Dalits.[18]</p>
-</div>
-<div class="col-md-4"  style="background-color:pink; border:2px solid blue;">
-<h1 style="font-style:Cooper;">Bhagat Singh</h1>
-<p>Bhagat Singh (Punjabi pronunciation: [pə̀ɡət̪ sɪ́ŋɡ] (About this soundlisten) 1907[a] – 23 March 1931) was an Indian socialist revolutionary whose two acts of dramatic violence against the British in India and execution at age 23 made him a folk hero of the Indian independence movement.</p>
-</div>
-<div class="col-md-3"  style="background-color:gray; border:2px solid purple;">
-<h1>Mahatma Gandhi</h1>
-<p>Mohandas Karamchand Gandhi (/ˈɡɑːndi, ˈɡændi/;[2] 2 October 1869 – 30 January 1948) was an Indian lawyer,[3] anti-colonial nationalist,[4] and political ethicist,[5] who employed nonviolent resistance to lead the successful campaign for India's independence from British Rule,[6] and in turn inspired movements for civil rights and freedom across the world. The honorific Mahātmā (Sanskrit: "great-souled", "venerable"), first applied to him in 1914 in South Africa, is now used throughout the world.[7][8]</p>
-</div>
-<div class="col-md-3"  style="background-color:Coral; border:2px solid purple;">
-<h1>Indira Gandhi</h1>
-<p>Indira Priyadarshini Gandhi (Hindi: Rule,[6] and in turn inspired movements for civil rights and freedom across the world. The honorific Mahātmā (Sanskrit: "great-souled", "venerable"), first applied to him in 1914 in South Africa, is now used throughout the world.[7][8]</p>
+<button class="btn btn-primary">
+<span class="spinner-border spinner-border-sm"></span></button>
+  <h2>alert</h2>
+<div class="alert alert-info">Hai</div>
+  <div class="alert alert-info alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  
+<div class="alert alert-info alert-dismissible">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>hai</div>
+  <p>For multiple lines of code, use the pre element:</p>
+  <pre>Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.</pre>
+
+  <p>If you add the .pre-scrollable class, the pre element gets a max-height of 340px and provides a y-axis scrollbar:</p>
+  <pre class="pre-scrollable">Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.
+  Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.
+  </pre>
+  <h2> hover effect</h2>
+  <a href="#" class="text-muted">muted link</a>
+  
+  <h1 class="display-1"> table with hover</h1>
+  <h1 class="display-4"> with example</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>santhi</td>
+        <td>Lavanya</td>
+        <td>dsanthilavanya@gmail.com</td>
+      </tr>      
+      <tr class="table-primary">
+        <td>swathi</td>
+        <td>reddy</td>
+        <td>swathi@example.com</td>
+      </tr>
+      <tr class="table-success">
+        <td>keerthi</td>
+        <td>keethana</td>
+        <td>keerthi@example.com</td>
+      </tr>
+      <tr class="table-danger">
+        <td>kumari</td>
+        <td> ch</td>
+        <td>kumari@example.com</td>
+      </tr>
+      <tr class="table-info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="table-active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Secondary</td>
+        <td>Secondson</td>
+        <td>sec@example.com</td>
+      </tr>
+      <tr class="table-light">
+        <td>Light</td>
+        <td>Angie</td>
+        <td>angie@example.com</td>
+      </tr>
+      <tr class="table-dark text-dark">
+        <td>Dark</td>
+        <td>Bo</td>
+        <td>bo@example.com</td>
+      </tr>
+  <button class="btn btn-primary">
+  <a href="www.com" class="spinner-border spinner-border-sm"> hai</a>
+ </button>
+  
 </div>
 
-<div class="col-md-3"  style="background-color:yellow; border:2px solid blue;">
-<h1>Mahatma Gandhi</h1>
-<p>Mohandas Karamchand Gandhi (/ˈɡɑːndi, ˈɡændi/;[2] 2 October 1869 nonviolent resistance to lead the successful campaign for India's independence from British Rule,[6] and in turn inspired movements for civil rights and freedom across the world. The honorific Mahātmā (Sanskrit: "great-souled", "venerable"), first applied to him in 1914 in South Africa, is now used throughout the world.[7][8]</p>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-3" style="background-color:light green; border:2px solid red;">
-<h1> A. P. J. Abdul Kalam</h1>
-<p>Avul Pakir Jainulabdeen Abdul Kalam (/ˈæbdəl kəˈlɑːm/ (About this soundlisten); 
-15 October 1931 – 27 July 2015) was an Indian aerospace scientist and politician who served as the 11th President of India from 2002 to 2007.
- He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering. He spent the next four decades as a scientist 
- and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Or</p>
-</div>
-
-</div>
+<div class="container">
+<img src="img1.jpg" class="rounded" alt="Tree" width="400" height="200">
 </div>
 </body>
 </html>
