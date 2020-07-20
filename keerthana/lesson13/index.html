@@ -15,43 +15,50 @@
 <style>
 body{
 background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6,#ffcccc,#66c2ff);
-
-}
-.mycols{
-border:5px solid white;
-background-color:pink;
-}
-.myrow{
-border:5px solid blue;
-
-}
-.font{
-font-size:60px;
-color:red;
 }
 
 </style>
 <body>
-<script>
+<script type="text/javascript">
 function msg(){
+var name=doctment.getElementById("name").value;
+var email=doctment.getElementById("email").value;
+var age=doctment.getElementById("number").value;
+alert(name);
+alert(email);
+alert(number);
+}
+function message(){
 alert("please fill all the information properly");
 }
 
+
 </script>
 <div class="container">
-<div class="jumbotron ">
+<div class="jumbotron">
 <div class="text-center">
-<h1 class="font"><img src="book.png">SURVEY FORM </h1>
-<h4>"Thankyou for taking the time to help us to improve the platform"</h4>   
+<h1 class="text-danger"><img src="book.png">SURVEY FORM </h1>
+<h4 class="text-primary">"Thankyou for taking the time to help us to improve the platform"</h4>   
 </div>
-<div class="row myrow">
-<div  class="col-sm-4-md-4 mycols">
+<br>
+<br>
 <form>
-<label for="name">Name:</label><input type="text" id="name" name="Name"   placeholder="Enter your name" required><br>
-<label for="email">Email:</label><input type="email" id="email" name="email"  placeholder="Enter your email" required><br>
-<label for="number">Age  :</label><input type="number" id="number" min="18" max="50"placeholder="Age"required><br>
-
-<label>Which option best describes your current role</label><br>
+<div class="row">
+<div class="col-md-3"><label for="name">Name:</label></div><div class="col-md-6"><div class="well"><input type="text" class="form-control" id="name" name="Name"  onclick="msg()" placeholder="Enter your name" required></div><br></div></div>
+<div class="row">
+<div class="col-md-3">
+<label for="email">Email:</label></div><div class="col-md-6"><input type="email"class="form-control" id="email" name="email" onclick="msg()" placeholder="Enter your email" required><br></div></div>
+<div class="row">
+<div class="col-md-3">
+<label for="number">Age  :</label></div><div class="col-md-6"><input type="number" class="form-control" id="number" min="18" max="50" onclick="msg()"placeholder="Age"required><br></div></div>
+<div class="row">
+<div class="col-md-3">
+<label for="number">Aadar no:</label></div><div class="col-md-6"><input type="text" class="form-control" id="number" placeholder="Enter your aader no" ></div></div><br>
+<div class="row">
+<div class="col-md-3">
+<label for="number">Date of birth:</label></div><div class="col-md-6"><input type="text" class="form-control" id="number" placeholder="Enter your date of birth"  ></div></div>
+<br>
+<label>Which option best describes your current role</label>
 
   <select name="dropdown"  class="primary">
   <option class="dropdown -item btn-primary">Select Your Current Role</option>
@@ -60,27 +67,35 @@ alert("please fill all the information properly");
     <option class="dropdown-item btn-primary" >other</option>
 	</select><br>
 	<br>
-	</div>
-	<div class="col-sm-4-md-4 mycols">
-<div><label>would you recommend freecodecamp to a friend</label><br>
-<input type="radio"  name="recommend" value="Definitely"><label>Definitely</label><br>
-<input type="radio"  name="recommend"value="May be"><label>May be</label><br>
-<input type="radio"   name="recommend" value="Not Sure"><label>Not Sure</label><br>
-</div>
 	
-	<label>What would you like to see improved?</label><br>
-<input type="checkbox"value="front-end"><label>front-end</label><br>
-<input type="checkbox"value="back-end"><label>back-end</label><br>
-<input type="checkbox"value="videos"><label>videos</label><br>
-<input type="checkbox"value="challenges"><label>challenges</label><br></div>
+	
+<label>ENTER GENDER</label><br>
+<div class="row bg-secondary">
+<div class="col-md-4">
+<input type="radio"  name="gender" value="male"><label>male</label></div>
+<div class="col-md-4">
+<input type="radio"  name="gender"value="female"><label>female</label></div>
 
-<div class="col-sm-6-md-5 mycols">
-<label>Any comments or suggestions<br><textarea rows="4"cols="48"placeholder="Enter your comments here......"></textarea></label></br>
-<button type ="submit"class="btn btn-primary "onclick="msg()"value="submit"/>Submit</button></form>
 </div>
+
+	<label>SELECT HOBBY</label><br>
+	<div class="row bg-secondary">
+	<div class="col-md-3">
+<input type="checkbox"value="cricket"><label>Cricket</label></div>
+<div class="col-md-3">
+<input type="checkbox"value="football"><label>Football</label></div>
+<div class="col-md-3">
+<input type="checkbox"value="hockey"><label>Hockey</label></div>
+<div class="col-md-3">
+<input type="checkbox"value="other"><label>Other</label></div><br>
+
+</div>
+<label>ENTER ADDRESS</label><br><textarea rows="4"cols="48"placeholder="Enter  address......"></textarea></br>
+
+<button type ="submit"class="btn btn-primary btn-lg btn-block"onclick="message()"value="submit"/>Submit</button></form>
  </div>
 </div>
-</div>
+
 
 </body>
 </html>
