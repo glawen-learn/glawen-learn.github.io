@@ -1,4 +1,4 @@
-<!doctype tml>
+<!DOCTYPE html>
 <html>
 <head>
 <!--Required meta tags-->
@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--Bootstrap css-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<title>free code camp survey form</title>
+<title>Swathi form</title>
 <style type="text/css">
        .con{background-color:black;
 	   color:white;
@@ -23,22 +23,34 @@
   <p>Thank you for taking the time to help us to improve the platform</p>
   </div>
   </div>
+  
   <div class="container-fluid ">
   <div class="row">
   <div class="col-lg-6" style="background-color:cyan;">
- <label>NAME:</label>
-  <input type="text" id="Name" name="name" placeholder="Enter your Name" required><br>
-  <label>EMAIL:</label>
- <input type="text" id="Email" name="email"  placeholder="Enter your Email" required> <br>
- <label>AGE:</label>
-<input type="Age" id="Age" name="age" placeholder="Enter your Age" required><br>
-  <label>Which option best describes your current role:</label><br>
+  <div class=
+  "row">
+  
+  <div class="col-sm-4">
+  <form>
+  <label>NAME:</label>
+  <input type="text" id="Name" name="name" placeholder="Enter your Name" onclick="demo()" required><br></div></div>
+  <div class="row">
+  <div class="col-sm-4">
+   <label>EMAIL:</label>
+ <input type="email" id="Email" name="email"  placeholder="Enter your Email"  onclick="demo()" required><br></div></div>
+ <div class="row">
+ <div class="col-sm-4">
+ <label>MOBILE NO:</label>
+<input type="number" id="mobile number" name="number" placeholder="Enter your number" onclick="demo()" required><br></div></div>
+ <div class="row"><div class="col-sm-4">
+  <label>Which option best describes your current role:</label>
 <select name="dropdown">
 <option value="Select your Current Role">Select your Current Role</option>
 <option value="Student">Student</option>
 <option value="Full time job">Full time job</option>
 <option value="Other">Other</option>
-</select><br>
+</select><br></div>
+</div>
 <label>Would you recommend free code camp to a friend:</label><br>
 <input type="radio" name="recommend" value="definitely">
 <label>DEFINITELY</label><br>
@@ -56,20 +68,27 @@
 <label>Any comments or suggestions:</label><br>
 <textarea rows="5" cols="30" placeholder="Enter your comment">
 </textarea><br>
-<button type="submit" class="btn btn-primary" onclick="submit()" value="submit"/>Submit</button>
-</div>
-</div>
+<button type="submit" class="btn btn-primary" onclick="submit()" value="submit"/>Submit</button></form>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script>
+<script type="text/javascript">
+function demo(){
+document.getElementById("name").value;
+var dol=document.getElementById("name").value;
+document.getElementById("email").value;
+var dol=document.getElementById("email").value;
+document.getElementById("mobilenumber").value;
+var dol=document.getElementById("mobilenumber").value;
+alert("name");
+alert("email");
+alert("mobilenumber");
+}
 function submit(){
-alert("please fill the name");
-alert("please fill the email");
-alert("please fill  the age");
-alert("please fill the comments");
+alert("Fill all the information");
 }
 </script>
+
 </body>
 </html>
