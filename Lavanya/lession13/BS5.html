@@ -1,0 +1,105 @@
+<DOCTTYPE html> 
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function msg(){
+  var name=document.get ElementById("name").value;
+  var email=document.get ElementById("Email").value;
+  var age=document.get ElementById("age").value;
+  alert("name");
+   alert("Email");
+    alert("age");
+  }
+  function send(){
+   alert("please fill the all information");
+   }
+</script>
+
+<style>
+h1{font-size:60px;}
+h2{font-size:50px;
+color:green;}
+.set{
+background-color:Khaki;
+padding:50px;
+margin:10px;
+font-size:20px;
+}
+
+#corners{
+border-radius:cover;
+background:linear-gradient(to right, rgba(50,40,70,400), rgba(305,40,60,90));;
+padding:30px;
+}
+#description{
+font-size:30px;
+background-color:pink;
+font-family:Copperplate Gothic;
+}
+.col{
+background-color:AntiqueWhite;
+}
+
+.jumbotron{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-align:center;
+  font-size :40px;
+}
+.set3{
+background-color:cyan;
+padding:40px;
+marging:7px;
+</style> 
+</head>
+<body>
+<div id="corners">
+<div class="jumbotron display-1">
+<fieldset><legend><h1>Login Survey Form</h1></legend></div>
+<div class="container text-center" >
+<p id="description">"Thankyou for applying..."</p>   </div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 set ">
+<form name="myForm" action="https://www.w3schools.com/" onsubmit="return validateForm()" method="post" id="survey-form">
+ <h2>login page</h1>
+<div class="form-group">
+<div class="row">
+<div class="col-sm-4"><label for="name">Name:</label><input type="text"   id="name" name="Name" placeholder="Enter your name" required onclick="msg()"><br></div></div>
+<div class="row">
+<div class="col-sm-4"><label for="email">Email:</label><input type="email"  id="email" name="email"  placeholder="Enter your email" required onclick="msg()"><br></div></div>
+<div class="row">
+<div class="col-sm-4"><label for="age">  Age:</label><input type="number"  id="number" placeholder="Enter your Age"required onclick="msg()"><br></div>
+</div><label>Which option  your current role</label><br>
+<select name="dropdown">
+<option value="select your current role">select your current role</option>
+<option value="student">student</option>
+<option value="full time job">job holder</option>
+<option value="other">other</option></select><br>
+</div></div>
+<div class="col-lg-4 set3"> 
+<label>gender</label><br>
+<input type="radio"name="recommend" value="gender"><label>male</label><br>
+<input type="radio" name="recommend"value="gender"><label>female</label><br>
+<input type="radio"name="recommend" value="gender"><label>others</label><br>
+<label>What what type of sports you are interesed</label><br>
+<input type="checkbox"value="front-end"><label>football</label><br>
+<input type="checkbox"value="back-end"><label>hokey</label><br>
+<input type="checkbox"value="videos"><label>indoor games</label><br>
+<input type="checkbox"value="challenges"><label>others games</label><br>
+<label >Any comments or suggestions<br><textarea rows="4" cols="40" placeholder="Enter your comments here......"></textarea></label>
+
+</br>
+<button type ="submit" class="btn btn-primary" onclick="send()" value="submit" />Submit</button></form>
+ </div>
+</div>
+ </div>
+ </fieldset>
+ </div>
+ </div>
+</body>
+</html>
