@@ -1,0 +1,51 @@
+body{
+  background-image:url("indp.jpg");
+}
+h1{
+  text-align:center;
+  background-color:cyan;
+  color:black;
+  margin-top:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-left:20px;
+  padding:10px 10px 10px 10px;
+  outline-style:outset;
+  outline-color:yellow;
+}
+h2{
+  text-align:center;
+  background-color:pink;
+  outline-style:inset;
+   outline-color:green;
+   margin-top:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-left:20px;
+  padding:10px 10px 10px 10px;
+}
+.dol{
+  background-color:gray;
+  color:violet;
+ outline-style:dotted;
+  outline-color:black;
+}
+
+   
+.cat{
+     background-color:orange;
+     color:red;
+     outline-style:double;
+      outline-color:blue;
+}
+ .dog{
+      background-color:rgb(120,230,100);
+       color:white;
+      outline-style:groove;
+      outline-color:red;
+}
+    .set {
+     font-size:4px;
+}
+
+     
