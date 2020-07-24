@@ -39,32 +39,32 @@ background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6,#ffcccc,#6
 <div class="row">
 <div class="col-md-3">
 <label for="number">Age  :</label></div><div class="col-md-6">
-<input type="number" class="form-control" id="number" min="18" max="50" placeholder="Age"required><br></div></div>
+<input type="number" class="form-control" id="age" min="18" max="50" placeholder="Age"required><br></div></div>
 <div class="row">
 <div class="col-md-3">
 <label for="number">Aadar no:</label></div><div class="col-md-6">
-<input type="text" class="form-control" id="number" placeholder="Enter your aader no" ></div></div><br>
+<input type="text" class="form-control" id="aadarno" placeholder="Enter your aader no" ></div></div><br>
 <div class="row">
 <div class="col-md-3">
 <label for="number">Date of birth:</label></div><div class="col-md-6"><input type="text" class="form-control" id="number" placeholder="Enter your date of birth"  ></div></div>
 <br>
 <label>Which option best describes your current role</label>
 
-  <select name="dropdown"  class="primary">
+  <select name="dropdown" id="role" class="primary">
   <option class="dropdown-item btn-primary">Select Your Current Role</option>
-    <option class="dropdown-item btn-primary" >student</option>
-    <option class="dropdown-item btn-primary" >full time job</option> 
-    <option class="dropdown-item btn-primary" >other</option>
+    <option class="dropdown-item btn-primary">student</option>
+    <option class="dropdown-item btn-primary">full time job</option> 
+    <option class="dropdown-item btn-primary">other</option>
 	</select><br>
 	<br>
 	
 	
 <label>ENTER GENDER</label><br>
-<div class="row bg-secondary">
+<div class="row bg-secondary" >
 <div class="col-md-4">
-<input type="radio"  name="gender" value="male"><label>male</label></div>
+<input type="radio"  name="gender" id="gender" value="male"><label>male</label></div>
 <div class="col-md-4">
-<input type="radio"  name="gender"value="female"><label>female</label></div>
+<input type="radio"  name="gender" id="gender"  value="female"><label>female</label></div>
 
 </div>
 
@@ -88,7 +88,20 @@ background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6,#ffcccc,#6
 <script>
 function msg(){
 var demo=document.getElementById("USER").value;
+var email=document.getElementById("email").value;
+var age=document.getElementById("age").value;
+var aadarno=document.getElementById("aadarno").value;
+var number=document.getElementById("number").value;
+var role=document.getElementById("role").value;
+var gender=document.getElementById("gender").value;
+
 alert(demo);
+alert(email);
+alert(age);
+alert(aadarno);
+alert(number);
+alert(role);
+alert(gender);
 }
 </script>
 
