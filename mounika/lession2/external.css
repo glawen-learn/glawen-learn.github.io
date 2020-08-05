@@ -1,0 +1,35 @@
+
+
+
+h1{
+   text-align:center;
+    color:red;
+}
+ h2{
+  color:orange;
+   
+}
+ h3{
+   color:pink;
+}
+table {
+  border:2px dotted lightblue;
+  color:white;
+}
+ @media (max-width: 500px) {
+      body {
+         background-color: lightblue;
+ }
+}
+ @media  (min-width: 600px) {
+    body {
+       background-color: green;
+ }
+}
+ @media  (min-width: 1200px) {
+    body {
+      background-color: violet;
+ }
+}
+  
+
