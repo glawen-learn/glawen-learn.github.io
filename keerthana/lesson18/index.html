@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Calculater</title>
+<style>
+body{
+font-size: 35px;
+}
+input{
+width: 330px;
+height: 50px;
+font-size: 25px;
+margin-top: 15px;
+margin-lift:40px;
+}
+
+h1{
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<h1>AGE CALCULATER</h1>
+Enter Age:<input type="text" id="age" placeholder="Enter Age" />
+<input type="submit" onclick="change()" /><br/>
+
+
+Months:
+<input type="text" id="months" placeholder=" Age in Months" /><br/>
+Days:
+<input type="text" id="days" placeholder=" Age in Days" /><br/>
+Hours:
+<input type="text" id="hours" placeholder=" Age in Hours" /><br/>
+Minutes:
+<input type="text" id="minutes" placeholder=" Age in minutes" /><br/>
+Seconds:
+<input type="text" id="seconds" placeholder=" Age in seconds" /><br/>
+
+<script>
+function change(){
+var age = document.getElementById('age').value;
+
+document.getElementById('months').value = (age * 12)+ "Months";
+document.getElementById('days').value=(age*12*30)+ "days";
+document.getElementById('hours').value=(age*12*30*24)+ "Hours";
+document.getElementById('minutes').value=(age * 12 *30 * 24 *60)+ "Minutes";
+document.getElementById('seconds').value=(age * 12 * 30 *24 * 60 * 60)+ " Seconds";
+}
+
+
+</script>
+</body>
+</html>
