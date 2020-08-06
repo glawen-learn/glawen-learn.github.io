@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Animals</title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+<script> 
 $(document).ready(function(){
-  $("input").focus(function(){
-    $(this).css("background-color", "yellow");
+$("button").click(function(){
+    $(".all").toggle();
   });
-  $("input").blur(function(){
-    $(this).css("background-color", "green");
+
+
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
   });
 });
 </script>
+<style>
+h1{
+color:red;
+text-align:center;  
+font-size:50px;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+button{
+text-align:center;
+font-size:50px;
+color:blue;
+padding:30px;
+margin-left:400px;
+}
+
+</style>
+
 </head>
 <body>
+<button>ALL ANIMALS</button>
+<div class="all">
+<h1 id="flip"> Different types of animals</h1>
+<div id="panel">
+<img src="Listofanimals.jpg" alt="Listofanimals">
+</div>
+<div>
+<img src="petanimals.jpg" alt="petanimals">
 
-Name: <input type="text" name="name"><br>
-Email: <input type="text" name="email">
+<img src="forestanimals.png" alt="forestanimals">
 
-
-
+</div>
+</div>
 </body>
 </html>

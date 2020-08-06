@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>SURVEY FORM</title>
+<style>
+body{ background-color:cyan;}
+ </style>
+</head>
+<body>
+<div class="jumbotron ">
+<div class="row justify-content-center" style="background-color:pink">
+<h1>SURVEY FORM</h1>
+</div>
+</div>
+<form>
+<div class="container-fluid ">
+<div class="row justify-content-center">
+<div class="col-lg-6" style="background-color:lightgreen;">
+<div class="row">
+<div class="col-sm-4"><label>NAME:</label></div>
+<div class="col-sm-4"><input type="text" id="name" name="name"  placeholder="enter your name" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>FATHER NAME</label></div>
+<div class="col-sm-4"><input type="text" id="fathername" name="name"  placeholder="enter your fathername" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>AADHAR NUMBER</label></div>
+<div class="col-sm-4"><input type="number" id="aadharnumber" name="number"  placeholder="enter your aadhar number" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>DATE OF BIRTH</label></div>
+<div class="col-sm-4"><input type="number" id="dob" name="number"  placeholder="enter your DOB" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>EMAIL-ID</label></div>
+<div class="col-sm-4"><input type="name" id="email" name="name"  placeholder="enter your email-id" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>MOBILE NUMBER</label></div>
+<div class="col-sm-4"><input type="number" id="mobilenumber" name="number"  placeholder="enter your mobilenumber" required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>which option best describes your current role:</label></div>
+<div class="col-sm-4"><select name="dropdown">
+<option value="Select your Current Role">Select your Current Role</option>
+<option value="Student">Student</option>
+<option value="Full time job">Full time job</option>
+<option value="Other">Other</option>
+</select></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>ENTER GENDER</label></div><br>
+<div class="col-sm-4"><input type="radio" name="gender" value="male">
+<label>Male</label></div><br>
+<div class="col-sm-4"><input type="radio" name="gender" value="Female">
+<label>Female</label></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>what is the important day in your life</label></div>
+<div class="col-sm-4"><input type="text" name="name" placeholder="your memorable day..." required></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>What makes you to feel happy</label></div><br>
+<div class="col-sm-4"><input type="checkbox" value="listening music"><label>listening music</label><br>
+<input type="checkbox" value="watching tv"><label>watching tv</label><br>
+<input type="checkbox" value="playing games"><label>playing games</label><br>
+<input type="checkbox" value="others"><label>others</label></div></div><br>
+<div class="row">
+<div class="col-sm-4"><label>ADDRESS:</label></div><br>
+<div class="col-sm-4"><textarea rows="5" cols="30" placeholder="enter address">
+</textarea></div></div><br>
+<button type="submit" class="btn btn-primary btn-lg btn-block" onclick="demo()">Submit</button></form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+function demo(){
+var cat=document.getElementById("name").value;
+var rat=document.getElementById("fathername").value;
+var dog=document.getElementById("aadharnumber").value;
+var mat=document.getElementById("dob").value;
+var sow=document.getElementById("email").value;
+var sat=document.getElementById("mobilenumber").value;
+alert(cat);
+alert(rat);
+alert(dog);
+alert(mat);
+alert(sow);
+alert(sat);
+}
+</script>
+</body>
+</html>
