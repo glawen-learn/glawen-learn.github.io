@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","pink");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","lightblue");
+  });
+});
+
+$(document).ready(function(){
+  $("p1").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "red");
+    }, 
+    click: function(){
+      $(this).css("background-color", "blue");
+    }  
+  });
+});
+$(document).ready(function(){
+  $("#age").mousedown(function(){
+    alert("Enter your Age!");
+  });
+});
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("p1").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#btm").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+    
+  $(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+  $(document).ready(function(){
+  $("#bttn").click(function(){
+    $("#p2").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});     
+</script>
+<style>
+h1{
+  text-align:center;
+  background-color:lightblue;
+  outline-style:inset;
+   outline-color:green;
+   margin-top:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-left:20px;
+  padding:10px 10px 10px 10px;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+  
+</style>
+</head>
+
+<body style="background-color:gray">
+<h1>Form</h1>
+<label for="Name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+<label for="Email">Email:</label>
+<input type="Email" name="email" id="email" placeholder="Enter your email" required><br><br>
+<label for="age" id="age">age:</label>
+<input type="number"id="age" name="number" placeholder="Enter your age" required><br><br>
+<label> password:</label>
+<input type="password" name="password"   placeholder="Enter your password" required><br><br>
+<label> contact number:</label>
+<input type="contact number" id="contact number" name="number" placeholder="Enter your contact" required> <br><br>
+<button>click me</button><br><br>
+<p1>Rekaplli mounika</p1><br><br>
+<button id="btm">Would you recommend freecodecamp to a friend </button><br><br> 
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"> <input type="radio"="recommend" value="definitly"><label>Definitly</label></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"><input type="radio"="recommend" value="May be"><label>May be</label></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:orange;"><input type="radio"="recommend" value="Not sure"><label>Not sure</label></div>
+<p id="p2">Glawen!!</p>
+<button id="bttn">click here</button><br><br>
+
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Thank you</div>
+
+</body>
+</html>
