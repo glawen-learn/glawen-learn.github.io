@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="multy.css">
+<title>cats</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+  $("button").click(function(){
+  $("#div1").fadeToggle(1000);
+});
+$("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+
+$("button").click(function(){
+    var img = $("#icon");
+    img.animate({width:'200px', opacity: '0.4'}, "slow");
+    img.animate({height:'200px', opacity: '0.8'}, "slow");
+	
+	
+	
+    
+  });
+
+
+
+
+
+});
+
+
+
+
+</script>
+</head>
+<body>
+<button>Start Animation</button>
+<div><h1><img src="icon1.png" alt="our Company" id="icon" class="main" ><button>Our company</button></h1></div>
+
+
+
+
+<div id="div1">
+<div class="main1">
+<div class="grid3">
+<div class="grid1">
+<div class="one">
+<button>The Title</button><br>
+<p>Some Text goes here, some text goes<br>
+ here, some text goes here, some text goes<br>
+ here.</p>
+ <h5 style= color:orange>Learn more...</h5>
+ 
+ </div>
+<div> <img src="cat.png" alt="cat" class="two"></div>
+ <div class="grid2">
+ <img src="cat1.jpg" alt="cat" class="three">
+ <img src="cat2.jpg" alt="cat" class="four">
+ </div></div>
+ </div>
+ <div id="flip">Click  for different cats</div>
+<div id="panel">
+
+ <div class="grid4">
+ <div><img src="cat3.jpg" alt="cat" class="five"></div>
+ <div><img src="cat4.jpg" alt="cat" class="six"></div>
+ <div><img src="cat5.jpeg" alt="cat" class="seven"></div>
+ <div class="eight">
+ <p><h2>The Title</h2><br>
+Some Text goes here, some text goes<br>
+ here, some text goes here, some text goes<br>
+ here.</p>
+ <h5 style= color:orange>Learn more...</h5>
+ 
+ </div>
+ </div>
+ <div class="grid5">
+ <img src="cat6.jpg" alt="cat" class="nine">
+<img src="cat7.jpg" alt="cat" class="ten"> 
+
+</div></div>
+</div></div>
+</body>
+</html>

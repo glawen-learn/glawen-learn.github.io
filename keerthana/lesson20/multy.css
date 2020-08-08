@@ -1,0 +1,110 @@
+.main{
+     width: 60px;
+	 height: 60px;
+	 }
+	 .one{
+		 height:300px;
+		 width:450px;
+		 background-color:gray;
+		 color:white;
+		 padding:30px;
+		 margin-left:0px;
+		 
+	 }
+	 .two{
+		 height:360px;
+		 width:505px;
+		 display:block;
+		 margin-left:0px;
+	 }
+	 .three{
+		 height:180px;
+		 width:485px;
+		 display:block;
+	 }
+	 .four{
+		 height:180px;
+		 width:485px;
+		 display:block;
+	 }
+	 .grid1{
+		 display: grid;
+		 grid-template-columns:1fr 1fr 1fr;
+	 }
+	 .grid2{
+		 display:grid;
+		 grid-template-rows:2;
+	 }
+		.grid3{
+			display:grid;
+			grid-templat-row:1fr;
+		}
+		.five{
+			height:350px;
+		 width:320px;
+		 display:block;
+		}
+		.six{
+			height:350px;
+		 width:320px;
+		 display:block;
+		 margin-left:0px;
+		}
+		.seven{
+			height:350px;
+		 width:500px;
+		 display:block;
+		 margin-left:0px;
+	 }
+	 .eight{
+		 height:290px;
+		 width:300px;
+		 background-color:gray;
+		 color:white;
+		 padding:30px;
+		 margin-left:0px;
+	 }
+	 .grid4{
+		 display: grid;
+		 grid-template-columns:1fr 1fr 1fr 1fr;
+	 }
+	 .nine{
+		 height:300px;
+		 width:750px;
+		 display:block;
+	 margin-left:0px;
+	 }
+	 .ten{
+		 height:300px;
+		 width:750px;
+		 display:block;
+	 margin-left:0px;
+	 }
+		 
+		 
+	 .grid5{
+		 display:grid;
+		 grid-template-columns:1fr 1fr;
+	 }
+	 .main1{
+		 display: block;
+		 }
+		 
+		#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  width:1500px;
+}
+
+#panel {
+  padding: 30px;
+  display: none;
+  width:1500px;
+} 
+			
+			
+			
+		
+	 
