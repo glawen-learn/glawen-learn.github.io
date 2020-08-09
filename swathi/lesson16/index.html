@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>Employee Other Details</title>
+<style>
+.rock1{
+   border-color:purple;}
+.rock2{
+  border-color:red;} 
+.coll{
+  color:red;}
+  .kkk{text-align:center;}
+</style>
+</head>
+<body>
+<form>
+<div class="jumbotron">
+<div class="alert alert-success">
+<h1 class="kkk">Other Details Of Employee</h1>
+</div>
+<div class="row" style="background-color:cyan">
+<div class="col">
+<div class="row">
+<div class="col-sm-6"><label class="text-primary">Father's Name:</label></div>
+<div class="alert alert-primary">
+<div class="col-sm-6"><input type="text" class="cla" id="rock3" name="fathersname"></div></div>
+</div>
+<div class="row">
+<div class="col-sm-6"><label class="text-muted">Mother's Name:</label></div>
+<div class="alert alert-danger">
+<div class="col-sm-6"><input type="text" class="cla"  name="mothersname"></div></div>
+</div>
+<div class="row">
+<div class="col-sm-6"><label class="text-info">Contact Number:</label></div>
+<div class="alert alert-info">
+<div class="col-sm-6"><input type="text" class="cla" name="contactnumber"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-warning">Blood Group:</label></div>
+<div class="alert alert-warning">
+<div class="col-sm-6"><input type="text" class="cla" name="bloodgroup"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-secondary">Email:</label></div>
+<div class="alert alert-secondary">
+<div class="col-sm-6"><textarea rows="1" cols="80" class="cla" name="email"></textarea></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-success">Date of Birth:</label></div>
+<div class="alert alert-success">
+<div class="col-sm-6"><input type="number" class="cla" name="Date of birth"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-warning">Place of Birth:</label></div>
+<div class="alert alert-warning">
+<div class="col-sm-6"><input type="text" class="cla" name="Place of birth"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-danger">Nominee1:</label></div>
+<div class="alert alert-danger">
+<div class="col-sm-6"><input type="text" class="cla" name="Nominee1"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-success">Nominee2:</label></div>
+<div class="alert alert-success">
+<div class="col-sm-6"><input type="text" class="cla" name="Nominee2"></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-dark">Residentail Address:</label></div>
+<div class="alert alert-dark">
+<div class="col-sm-6"><textarea rows="3" cols="80" class="cla" name="Resindentail address"></textarea></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-primary">Permanent Address:</label></div>
+<div class="alert alert-primary">
+<div class="col-sm-6"><textarea rows="3" cols="80" class="cla" name="permanent address"></textarea></div></div></div>
+<div class="row">
+<div class="col-sm-6"><label class="text-info">Remarks:</label></div>
+<div class="alert alert-info">
+<div class="col-sm-6"><input type="text" class="cla" name="remarks"></div></div></div>
+</div>
+</div>
+<button type="submit" class="btn btn-primary btn-sm-6 btn-block">Submit</button></form>
+</div>
+<p id="swa" class="kkk">Please once check and submit the details</p>
+<center><button>click here</button><center>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(".cla").change(function(){
+  var value=$(this).val();
+  if(value=="srinu"){
+  $(this).addClass("rock1");
+  }
+  else{
+  $(this).addClass("rock2");
+  }
+  });
+  $(document).ready(function(){
+  $("#rock3").mouseup(function(){
+    alert("please fill fathername");
+  });
+});
+  $(document).ready(function(){
+  $("h1").addClass("coll");
+}); 
+$(document).ready(function(){
+  $("button").click(function(){
+  $("#swa").css("color", "red").slideUp('3000').slideDown('3000');
+  });
+  }); 
+   
+</script>
+</body>
+</html>
