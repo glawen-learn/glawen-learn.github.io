@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/bootstap.css">
+<script src="js/bootstap.js"></script>
+<script src="jquery-3.5.1.js"></script>
+<script>
+$(document).ready(function(){
+
+ $(".s1").on({
+    mouseenter: function(){
+      $(this).css("background-color", "DarkGoldenRod");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "DarkOrchid");
+    }, 
+    click: function(){
+      $(this).css("background-color", "MediumVioletRed");
+    }  
+  });
+
+  $("#p1").dblclick(function(){
+    $(this).hide();
+  });
+
+$("#set").click(function(){
+$("p").hide(3000);
+});
+$("#set1").click(function(){
+$("p").show(1000);
+});
+
+ $("input").focus(function(){
+    $(this).css("background-color", "blue");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "gray");
+  });
+
+$("#set2").click(function(){
+$("h5").toggle(500);
+});
+$("#set3").click(function(){
+$("h2").fadaIn();
+});
+ $("#p2").mouseenter(function(){
+    alert("hai welcome to my Jquery page.");
+  });
+   $("#p1").mouseleave(function(){
+    alert("Bye! You now leave p1!");
+  });
+   $("#p3").mouseleave(function(){
+    alert("don't go away");
+  });
+  $("#p4").mousedown(function(){
+    alert("Mouse down over text");
+  });
+   $("#p5").mouseup(function(){
+    alert("Mouse up over the text...");
+  });
+    $("#p6").hover(function(){
+    alert("You are enter the web page.");
+  },
+  function(){
+    alert("Bye! You  now leave my page.");
+  }); 
+   $("#b1").click(function(){
+    $(".set4").toggle();
+  });
+  $("#m1").click(function(){
+    $("h1").fadeToggle();
+    $(".c1").fadeToggle("slow");
+    $(".c2").fadeToggle(1000);
+  });
+   $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+   $("#l1").click(function(){
+    var div = $("#last");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+});
+</script>
+<style>
+body{
+background-color:pink;
+}
+#panel, #flip{
+padding:5px; 
+  text-align: center;
+  background-color: tan;
+  border: solid 1px #c3c3c3;}
+  #panel{
+   padding: 8px;
+  display: none;
+  }
+  
+.container{
+position:relative;
+	margin-top:10px;
+	width:800px;
+	height:auto;
+	background:aqua;
+border-radius:5px;
+padding:30px;
+border-color:blue;}
+.s1{
+font-size:40px;
+padding:20px;}
+
+.h1{
+width:80px;
+height:80px;
+background-color:Orchid;
+font-size:100px;
+padding:200px;}
+.c1{
+width:80px;
+height:80px;
+background-color:MediumOrchid;
+font-size:50px;
+padding:100px;
+}
+.c2{
+width:80px;
+height:80px;
+background-color:blue;
+font-size:30px;
+padding:100px;
+}
+#last{
+background:#98bf21;
+height:100px;
+width:100px;
+position:absolute;
+margin:40px;
+padding:100px;}
+
+</style>
+</head>
+
+<body>
+<div id="flip">complete my full page to open it</div>
+<div id="panel">
+<button id="m1">click to fade in/out</button>
+<h1>My Jquery web site</h1>
+<div class="c1">Hai guys</div><br>
+<div class="c2">This is my new web site.</div><br><br>
+<button id="set">click to hide</button>
+<button id="set1">click to show</button><br><br>
+<div class="container">
+<p class="s1">Sample form</p>
+User name:<input type="text" name="full name"><br></input>
+Enter email:<input type="text" name="email"></input>
+</div>
+
+<h5>If your website contains a lot of pages, and you want your jQuery functions to be easy to maintain, you can put your jQuery functions
+ in a separate .js file.</h5>
+ <button id="set2">hide or show</button>
+ <h2>here i'm using fadeout</h2>
+ <button id="set3">click here</button><br><br>
+ <button id="b1">Up and Down</button>
+ <div class="set4">
+ <h4>if you double-click on me, I will disappear. here i'm using hide option. </h4>
+<p id="p1">double-click on me</p>
+<h4>here i'm using mouse enter on text it will show popup msg.</h4>
+<p id="p2">Touch here</p><br>
+<h4>If you goes out on courser, it will show popup msg.</h4>
+<p id="p3">Don't leave the text</p>
+<p id="p4">don't go away</p>
+<p id="p5">touch here</p><br><br>
+<h4> Here I'm using both events, touch and go away.</h4>
+<p id="p6">check it here</p>
+</div><br><br><br><br><br><br><br>
+<button id="l1">click to animate</button><br> 
+<div id="last">thankq, click to close.</div>
+</div>
+</body>
+</html>
