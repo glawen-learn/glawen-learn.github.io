@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title> Form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script src="jquery-3.5.1.js" ></script>
+<script src="animation.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+
+<form name="myform"  class="form" onsubmit="validateForm()">
+<h1>Registration FORM</h1>
+<ul>
+<li  class="title input">Who Are You?</li>
+<li class="fields">
+<label>*First Name:</label><br>
+<input id="firstname" class="req" type="text" placeholder="Enter your firstname" required/><br>
+<label>Middle Name:</label><br>
+<input id="middlename" class="req"  type="text" placeholder="Enter your Middlename" required /><br>
+<label>Last Name:</label><br>
+<input id="lastname" class="req"  type="text" placeholder="Enter your Lastname" required /><br>
+<label>*Email:</label><br>
+<input id="email" class="req"  type="email" id="email" name="email" pattern="[^@]*@[^@]*" placeholder="Enter your email" required /><br>
+
+<label for="password">Password</label><br>
+<input type="password"  name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"  required>
+
+
+
+</li>
+</ul>
+
+<a href="tabbedform1.html"><input type="button" id="input" class="btn btn-primary"   value ="Next"></a>
+</form>
+</body>
+</html>
+
+
+
+
