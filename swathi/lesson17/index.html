@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my friends</title>
+<link rel="stylesheet" type="text/css" href="grad.css">
+</head>
+<body>
+<h1 id="rock">My Friends</h1>
+<div class="nav">
+<div class="grad"><i>Jayanthi</i></div>
+<div class="grad"><i>Raji</i></div>
+<div class="grad"><i>Sravani</i></div>
+<div class="grad"><i>Chandana</i></div>
+<div class="grad"><i>Anjana</i></div>
+<div class="grad"><i>Keerthana</i></div>
+<div class="grad"><i>Lavanya</i></div>
+<div class="grad"><i>Mounika</i></div>
+<div class="grad"><i>Bhargavi</i></div>
+</div>
+<h1>My Best partner in my friends is...</h1>
+<p class="coll"> Sravani darling</p>
+<ul>
+<li>Rocky</li>
+<li>chinnu</li>
+<li>tommy</li>
+<li>jimmy</li>
+</ul>
+<h1 id="rock">Puppies</h1>
+<div class="tomies">
+<img src="rock.jpg">
+<img src="tom.jpg">
+<img src="jimmy.jpg">
+<img src="cutiee.jpg">
+</div>
+<h1>you can remove the puppies images by clicking on the image</h1>
+<h2>Among all these dogs the puppy which i love more is.....</h2>
+<p class="coll">Rocky</p>
+<h1>Type your favourite puppy names</h1>
+<input type="text" placeholder="puppy names">
+<button id="swa">Add</button>
+<ol id="mylist"></ol>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("h1").css("color", "red");
+$("h1").css("background-color", "black");
+$(".nav").css("background-color", "black");
+$("p").css("font-size", "30px");
+$("ul").before("<h1>My puppies</h1>");
+$("ul").after("<h1>are sooo...cute...</h1>");
+$("li").css("font-size", "20px");
+$("h2").css("color", "black");
+$("h2").css("background-color", "orange");
+$("img").click(function(){
+$(this).hide();
+});
+$(".coll").click(function(){
+$("p").animate({width: '1320px'}, 3000);
+});
+$("#swa").click(function() {
+var val = $("input").val();
+if(val!== ''){
+var elem= $("<li></li>").text(val);
+$("#mylist").append(elem);
+$("input").val("");
+}
+});
+$("h1").click(function(){
+$(".nav").animate({height: 'toggle'});
+});
+$("h1").click(function(){
+$(".tomies").animate({height:'toggle'});
+});
+});
+
+</script>
+</body>
+</html>
