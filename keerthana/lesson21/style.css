@@ -1,0 +1,34 @@
+body{
+width: 500px;
+margin: auto;
+text-align: center;
+
+
+}
+.form{background-color: rgba(90,20,100,0.5);
+border:10px solid yellow;
+padding-right: 20px;
+}
+h1{
+	color:red;
+	
+}
+
+li{
+list-style:none;
+}
+li.fields{
+margin: 0;
+padding: 1em 0;
+}
+li.title{
+cursor: pointer;
+font-weight: bold;
+font-size: 1.5em;
+line-height: 2em;
+background: #e3e3e3;
+border-top: 1px solid white;
+}
+.hide{
+display: none;
+}  
