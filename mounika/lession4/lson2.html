@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+      var div = $("div");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script>
+<style>
+ .dot{
+   float: right;
+   font-size: 20px;
+}        
+</style>
+</head>
+<body style="background-color: #E0FFFF;">
+<button>click here</button>
+<div style="background:pink;height:150px;width:200px;position:absolute;">Thank You </div><br><br><br><br><br><br><br><br><br><br>
+<button class="dot"><a href="lson.html">previous</a></button>
+</body>
+</html>

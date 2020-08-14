@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "lightblue");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "pink");
+  });
+
+  $("#dor").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+    
+});
+</script>
+<style>
+#panel, #dor {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+body {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); 
+} 
+  button{
+    font-size: 40px;
+}  
+</style>
+</head>
+<body>
+<div id="dor">Click to slide the panel down or up</div>
+<div id="panel">
+<h1>Form</h1>
+<p>Fill in the form</p>
+<form action="lson.html">
+<label for="Name">First Name:</label>
+ <input type="text" id="First name" name="name" placeholder="Enter your first name" required>
+<br><br>
+<label for="Name">Second Name:</label>
+ <input type="text" id="Second name" name="name" placeholder="Enter your second name" required>
+<br><br>
+<label for="Email">Email:</label>
+ <input type="Email" name="email" id="email" placeholder="Enter your email" required>
+<br><br>
+<button type="submit"><a href="lson.html"></a>Next</button>
+</div>
+</form> 
+</body>
+</html>
