@@ -22,10 +22,7 @@ $(document).ready(function(){
  
 });
 </script>
-$("button").click(funtion(){
-  $("#previous").attr("href", "index.html");
-  $("#next").attr("href", "page2.html");
-  });
+
 <style> 
 #panel, #flip {
   padding: 5px;
@@ -38,6 +35,9 @@ $("button").click(funtion(){
   padding: 50px;
   display: none;
 }
+
+
+
 </style>
 </head>
 <body>
@@ -54,8 +54,8 @@ $("button").click(funtion(){
 <div class="font">Status:</div><input type="text" name="status" placeholder="married or unmarried"></input>
 </div>
 
-<button class="btn btn-success"> <a href="index.html" id="previous">Previous</button>
-<button class="btn btn-success"><a href="page2.html" id="next">next</button></a>
+<button id="b1" type="button" class="btn btn-success"> <a href="index.html" id="previous">Previous</button>
+<button type="submit" class="btn btn-success"><a href="page2.html" id="submit">submit</button></a>
 </form>
 </div>
 </body>

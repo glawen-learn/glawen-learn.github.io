@@ -33,23 +33,39 @@ $(document).ready(function(){
    $(".font").mouseup(function(){
     alert("please fill this fieldset");
   });
+  
+  
+  
+  
+ click: function validateForm(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<9){  
+  alert("Password must be at least 9 characters long.");  
+  return false;  
+  }  
+}  
 });
 </script>
 <style>
 P{
-font-size:40px;
+font-size:50px;
 font-family:cooper;
 text-align:center;
-color:purple;</style>
+color:Orchid;}
+</style>
 </head>
 <body>
 <div class="container">
 <h1 class="main">Survey form</h1>
 <p>log in page</p>
-<form class="login_form"  method="post" target="_blank" name="form" onsubmit="validateForm()">
+<form class="login_form"  action="page1.html" method="post"  name="myform" onsubmit="return validateForm()">
 <div class="font">Full Name:</div>
-<input autocomplete="off" type="text" placeholder="enter your fullname" required name="fname">
-
+<input autocomplete="off" type="text" placeholder="enter your fullname" required  name="name">
+     
 <div id="name_error">Please fill up your full Name</div>
 
 <div class="font font1">E-mail:</div>
@@ -61,7 +77,7 @@ color:purple;</style>
 <input type="password" name="password" placeholder="enter your password" required name="password"><br><br><br>
 
 <a href="page1.html">
-<input type="button" value="Next" class="btn btn-success"></a>
+<input type="submit" value="Next" class="btn btn-success"></a>
 </form>
 </div>
 </body>

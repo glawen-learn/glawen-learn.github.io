@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 <script>
 $(document).ready(function(){
 $("#b1").click(function(){
-var set=$("#d1");
+var div=$(".d1");
 div.animate({height:'530px',  opacity: '1.9'}, "fast");
     div.animate({width: '300px', opacity: '0.8'}, "slow");
     div.animate({height: '100px', opacity: '0.4'}, "slow");
@@ -26,13 +26,11 @@ div.animate({height:'530px',  opacity: '1.9'}, "fast");
     div.animate({fontSize: '3em'}, "slow");
   });
   });
-  
-
 </script> 
 <style>
 body{
-background-image: linear-gradient(to right, rgba(105,80,90,60), rgba(5,90,40,15));
-}
+background-image: linear-gradient(to right, rgba(105,80,90,600), rgba(5,90,40,15));
+} 
 h1{
 font-size:60px;
 color:aqua;
@@ -40,19 +38,13 @@ font-family:Harrington;}
 </style>
 </head>
 <body>
-<div class="container-fluid">
-<div class="set">
+
 <h1>completed</h1>
-<div>
 <button id="b1" class="btn btn-success " >click here</button>
 <br>
-<div id="d1" style="background:orange;height:400px;width:500px;position:absolute; text-align:center; font-size:20px;">😊 </div>
+<div class="d1" style="background:orange;height:400px;width:500px;position:absolute; text-align:center; font-size:20px;">😊 🙏 🤩 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <button id="b2">Start Animation</button>
-<div style="background:#98bf21;height:100px;width:200px;position:absolute;">Thank you for filling this form</div>
-
-</div>
-</div>
-</div>
+<div style="background:#98bf21;height:100px;width:700px;position:absolute;">Thank you for filling this form</div>
 </body>
 </html>
