@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "lightblue");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "pink");
+  });
+ 
+});
+</script>
+<style>
+   .ant{
+   font-size:20px;
+}
+  
+  .but{
+    float:right;
+    font-size:20px;
+}
+</style>
+</head>
+<body style="background-color: #ADFF2F;">
+<form>
+
+<label for="age">Age:</label>
+ <input type="number" id="age" name="number" placeholder="Enter your age" value="number" required>
+<br><br>
+<label for = "number">Phone Number:</label>
+ <input type= "number" id="number" name="number" placeholder="Enter your number" value="number" required />
+<br><br>
+<label>Choose The Gender </label><br>
+ <input type="radio" name="Gender" value="Male"><label>Male</label><br>
+ <input type="radio"name="Gender" value="Female"><label>Female</label><br>
+ <input type="radio"name="Gender" value="Other"><label>Other</label><br><br>
+<label>Choose The Marital Status</label><br>
+ <input type="radio" name="gender" value="married"><label>Married</label><br>
+ <input type="radio" name="gender" value="Unmarried"><label>Unmarried</label><br>
+ <input type="radio" name="gender" value="widowed"><label>Widowed</label><br>
+<fieldset>
+  <legend>Adress:</legend>
+   <label>Village:</label><br>
+    <label>Street:</label><br>
+   <label>State:</label><br>
+   <label>Dt:</label>
+</fieldset><br>
+<label>Do you fill the form</label><br>
+<input type="checkbox" check="check the form filled or not"  value= "yes">
+ <label for="Yes"> Yes</label><br>
+ <input type="checkbox" checked="check the form  filled or not" value="no">
+ <label for="No">No</label><br><br>
+<label>Any comments or suggestions<br><textarea id="comment"name="name"placeholder="Enter your comment here... "rows"="7" cols="60"></textarea></label><br><br>
+ <input type="submit" value="Submit"><br><br>
+<button class="ant"><a href="index4.html">previous</a></button>
+<button class="but"><a href="lson2.html">Next</a></button>
+</form>
+</body>
+</html>
