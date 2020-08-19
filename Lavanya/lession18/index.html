@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>slidepage1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+
+ $(".tab").show();
+  $(".tab1").hide();
+  $(".tab2").hide();
+  $(".tab3").hide();
+
+  $("#net1").click(function(){
+  $(".tab1").show();
+  $(".tab").hide();
+  $(".tab2").hide();
+  $(".tab3").hide();
+  });
+  
+  $("#net2").click(function(){
+  $(".tab2").show();
+  $(".tab").hide();
+  $(".tab1").hide();
+  $(".tab3").hide();
+  });
+  
+   $("#net3").click(function(){
+  $(".tab3").show();
+  $(".tab").hide();
+  $(".tab1").hide();
+  $(".tab2").hide();
+  });
+  
+  
+  
+  
+  
+  
+  $("#pre1").click(function(){
+  $(".tab").show();
+  $(".tab1").hide();
+  $(".tab2").hide();
+  $(".tab3").hide();
+  });
+  
+  $("#pre2").click(function(){
+  $(".tab1").show();
+  $(".tab2").hide();
+  $(".tab").hide();
+  $(".tab3").hide();
+  });
+  
+   $("#pre3").click(function(){
+  $(".tab2").show();
+  $(".tab").hide();
+  $(".tab1").hide();
+  $(".tab3").hide();
+  });
+});
+</script>
+<style>
+
+h1{
+background-color:yellow;
+color:gray;
+text-align:center;
+padding:20px;
+margin:20px;
+font-family:Algerian;
+font-size:40px;
+color:Olive;
+}
+.tab{
+background-color:PaleVioletRed;
+color:blue;
+border:4px solid white;
+padding:50px;
+margin:20px;
+font-size:35px;
+font-family:Leelawadee;
+}
+
+.tab1{
+background-color:DarkOliveGreen;
+color:blue;
+border:4px solid white;
+padding:20px;
+margin:10px;
+font-size:35px;
+font-family:Leelawadee;
+}
+.tab2{
+background-color:DarkGoldenRod;
+color:hotpink;
+border:4px solid white;
+padding:20px;
+margin:10px;
+font-size:35px;
+font-family:Leelawadee;
+}
+.tab3{
+background-color:skyblue;
+color:black;
+border:4px solid blue;
+padding:20px;
+margin:10px;
+font-size:35px;
+font-family:Leelawadee;
+}
+body{
+
+background-image: linear-gradient(to right, rgba(80,40,80,50), rgba(300,80,150,90));
+padding:90px;
+margin:70px;}
+
+</style>
+</head>
+<body> 
+<form>
+  <h1>User Login form</h1>
+   
+  <div class="tab">1User Name:
+    <p><input placeholder="Enter First name..."  name="fname"></p>
+    <p><input placeholder="Enter Last name..."  name="lname"></p>
+	 <button type="button" id="net1">Next</button>
+  
+  </div>
+  
+  <div class="tab1">2Contact Info:
+    <p><input placeholder="E-mail..."  name="email"></p>
+    <p><input placeholder="Phone..."  name="phone"></p>
+	<button type="button" id="pre1"> Previous </button>
+	 <button type="button" id="net2">Next</button>
+  </div>
+  
+  <div class="tab2">3Birthday:
+    <p><input placeholder="date"  name="dd"></p>
+    <p><input placeholder="month"   name="nn"></p>
+    <p><input placeholder="year"  name="yyyy"></p>
+<button type="button" id="pre2"> Previous </button>	
+	<button type="button" id="net3"> Next </button>
+  </div>
+  
+  <div class="tab3">4Login Info:
+    <p><input placeholder="Username..."   name="uname"></p>
+    <p><input placeholder="Password..."   name="pword" type="password"></p>
+     <button type="button" id="pre3"> Previous </button> 
+	 <button type="submit" id="net4"> submit </button>
+	   </div>
+ 
+  </form>
+  </body>
+  </html>
