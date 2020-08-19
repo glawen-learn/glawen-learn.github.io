@@ -1,0 +1,21 @@
+body{
+background-color:black;
+color:white;
+text-align:center;
+border:30px solid red;
+margin-left:300px;
+margin-right:300px;
+}
+#jack{
+	border:20px solid orange;
+}
+.lavu{
+	border:20px solid orange;
+	display:none;
+}
+.kit{
+	text-align:center;
+	background-color:orange;
+	border:10px solid lightgreen;
+	font-size:30px;
+}
