@@ -3,7 +3,7 @@
 <head>
 	<title>jQueryform</title>
 
-	<script src="jquery-3.5.1.js" ></script>
+	
 	
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -53,39 +53,10 @@ display:block;
 width:500px;
 hight:50%;
 }
-.green{
-border: 2px solid green;
 
-}
-.error{
-display:none;
-margin-left: 10px;
-}		
-
-.error_show{
-	color: red;
-	margin-left: 10px;
-}
-input.invalid{
-	border: 2px solid red;
-}
-
-input.valid{
-	border: 2px solid green;
-}
-
-
-
-
-
-#contact label{
-	display: inline-block;
-	width: 100px;
-	text-align: right;
-	}
-    .red{
-	border: 2px solid    red;
-	}
+	.error{
+    border: 2px solid red;
+    }		
 </style>
 
 
@@ -109,37 +80,24 @@ input.valid{
 				
 				$("#email").css("border","2px solid red");
 				$("#emailMsg").html("<p class='text-danger'>Un-validated</p>");
-			}
-			
+			}	
 		});
 		
 		$("#pass").keyup(function(){
-		
 			if(validatePassword()){
-				
 				$("#pass").css("border","2px solid green");
-				
 				$("#passMsg").html("<p class='text-success'>Password validated</p>");
 			}else{
-					
-				$("#pass").css("border","2px solid red");
-				
+					$("#pass").css("border","2px solid red");
 				$("#passMsg").html("<p class='text-danger'>Password not valid</p>");
 			}
-			
 		});
-		
-		
-	
 		$("#nextBtn").click(function(){
 		$(".myslide2").show();
 		  $(".myslide1").hide();
           $(".myslide3").hide();
-		  
-		
 		});
-		 
-		$("#next").click(function(){
+		 $("#next").click(function(){
 		$(".myslide1").hide();
 		$(".myslide2").hide();
 		$(".myslide3").show();
@@ -158,71 +116,58 @@ input.valid{
 		$(".myslide1").show();
 		$(".myslide2").hide();
 		$(".myslide3").hide();
-		
+	   });
+	   $(".submit").click(function(){
+		var arrayOfInputFields = $("input");
+		$.each(arrayOfInputFields, function(index,element){
+		if($(element).val() == ""){
+		$(element).addClass("error"); 
+		}else{
+		$(element).removeClass("error");
+		}
 		});
-		
-	$("#contact_submit button").click(function(event){
-	var form_data=$("#contact").serializeArray();
-	var error_free=true;
-	for (var input in form_data){
-		var element=$("#contact_"+form_data[input]['name']);
-		var valid=element.hasClass("valid");
-		var error_element=$("span", element.parent());
-		if (!valid){error_element.removeClass("error").addClass("error_show"); error_free=false;}
-		else{error_element.removeClass("error_show").addClass("error");}
-	}
-	if (!error_free){
-		event.preventDefault(); 
-	}
-	else{
-		alert('No errors: Form will be submitted');
-	}
-});	
-		
-	   
-	   
-	   
-	   
-	   
-	   
-		//$.each($("input[type=text]"),function(){
-		//if($(this).val()==""){
-		//$(this).addClas s("red");
-		//if($(this).parents(".form-control").hasClass("required")){
-		//$(".myslide1").show();
-		//}else if ($(this).parents(".form-control" ).hasClass("number")){
-		//$(".myslide2").show();
-		//}else if($(this).parents(".form-control").hasClass("enter")){
-		//$(".myslide3").show();
-		//}
-		//}else{
-		//$(this).removeClass("red");
-		//}
-		//});
-		//});
-		//if($("input[type=text]").val==''){
-		//$(".myslide1").show().css("border","red");
-		//$(".error").text("This field is required");
-		//}else{
-		//$(".myslide1").hide();
-		//$(".error").hide(); 
-       //}
-		  
-		//});
-			
-			
-			
-			
-			});
+		var arrayOfInputFieldsFromslider3 = $(".myslide3 input");
+		$.each(arrayOfInputFieldsFromslider3, function(index,element){
+		if($(element).val() == ""){
+		$(".myslide3").show();
+		$(".myslide1").hide();
+		$(".myslide2").hide();
+		$(element).addClass("error");
+		}else{
+		$(element).removeClass("error");
+		}
+		});
+		var arrayOfInputFieldsFromslider2 = $(".myslide2 input");
+		$.each(arrayOfInputFieldsFromslider2, function(index,element){
+		if($(element).val() == ""){
+		$(".myslide2").show();
+		$(".myslide1").hide();
+		$(".myslide3").hide();
+		$(element).addClass("error");
+		}else{
+		$(element).removeClass("error");
+		}
+		});
+		var arrayOfInputFieldsFromslider1 = $(".myslide1 input");
+		$.each(arrayOfInputFieldsFromslider1, function(index,element){
+		if($(element).val() == ""){
+		$(".myslide1").show();
+		$(".myslide2").hide();
+		$(".myslide3").hide();
+		$(element).addClass("error");
+		}else{
+		$(element).removeClass("error");
+		}
+		});
+		});
+	});
 			
 	
 
 	 
 	function validateEmail(){
-		
 		var email=$("#email").val();
-		
-		 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
 		 if(reg.test(email)){
 		 	return true;
 		 }else{
@@ -231,20 +176,14 @@ input.valid{
 
 	}
 	function validatePassword(){
-		
 		var pass=$("#pass").val();
-		
 		if(pass.length > 7){
 			return true;
 		}else{
 			return false;
 		}
-
-	
 	}
-	
 	</script>
-	
 	
 <body class="bg-primary">
 <div class="container">
@@ -253,41 +192,34 @@ input.valid{
 		<div class="col-md-4">
 		</div>
 	 
-	<form  id="contact" >
-		
-		
-			
-		
+	<form  action="#" method="post">
 		
 		<div class="col-md-12 border shadow-sm bg-light" style="margin-top:8%;padding:10px;">
 	
 		<h1> Register Form</h1>
-		
-		
 		<div class="myslide1">
-	
+	<h3>Myslider1</h2>
 		<label>First name</label> 
-    <input  type="text"	class="form-control requird	"	  id="firstname"    placeholder="First name..." autocomplete="off" >
-     <span  class="error">This field is required</span>
-	 
-	 
-	<label>Last name</label> 
-	<input type="text" class="form-control required" 		id="lastname"		placeholder="Last name..." autocomplete="off" >
-  <span class="error">This field is required </span>
+    <input  type="text"	class="form-control requird 	"	  id="firstname"    placeholder="First name..." autocomplete="off" >
+     
+	 <label>Last name</label> 
+	<input type="text" class="form-control required " 		id="lastname"		placeholder="Last name..." autocomplete="off" >
+  
   <br>
 		<button type="button" class= "btn btn-success " id="nextBtn" >Next</button>
  </div>
 		<br>
 		
 	<div class="myslide2">
+	<h3>MYslider2</h2>
 	
-		<label>Aadhar Number</label>
-		<input type="number" class="form-control required"	 id="aadharnumber" placeholder="Aadhar no..." autocomplete="off" >
-       <span class="error"> This field is required</span>
+		<label>Aadharnumber</label>
+		<input type="number" class="form-control required "	 id="aadharnumber" placeholder="Aadhar no..." autocomplete="off" >
+       
 	
-		<label>Phone Number</label>
-		<input type="number"	class="form-control required"		id="phonenumber" placeholder="Phone no..." autocomplete="off">
-		<span  class="error">This field is required</span>
+		<label>Phonenumber</label>
+		<input type="number"	class="form-control required "		id="phonenumber" placeholder="Phone no..." autocomplete="off">
+		
 		<br>
 		<button type="button" class= "btn btn-succuse" id="prevBtn" class="previous">Previous</button>
       <button type="button" class= "btn btn-success " id="next" >Next</button>
@@ -295,15 +227,16 @@ input.valid{
 		<br>
 		
 			<div class="myslide3">
+			<h3>Myslider3</h2>
 				<label>Enter email:</label>
-				<input type="email" class="form-control	required enter"      id = "email" placeholder="Enter email" autocomplete="off" >
-				<span   id="emailMsg" class="error">This field is required</span>
+				<input type="email" class="form-control	required "      id = "email" placeholder="Enter email" autocomplete="off" >
+	<span id="emailMsg"></span> 
 			
  
 			
-				<label>Enter password:</label>
-				<input type="password" class="form-control	required 	enter" name="password"  	id="pass" placeholder="Enter password" autocomplete="off" >
-				<span id="passMsg" class="error">This field is required</span>
+				<label>Enterpassword:</label>
+				<input type="password" class="form-control	required " name="password"  	id="pass" placeholder="Enter password" autocomplete="off" >
+				<span id="passMsg"></span> 
 				
 
 
@@ -315,7 +248,7 @@ input.valid{
       
 			<br><br>
 <div id="contact_submit">
-				<button type="submit" class= "btn btn-primary btn-block submit">Submit</button></div>
+				<button type="button" class= "btn btn-primary btn-block submit">Submit</button></div>
 		</div> 
 		
 		</form>
