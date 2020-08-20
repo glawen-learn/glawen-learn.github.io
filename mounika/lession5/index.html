@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<hmtl>
+<head><title>Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(function(){
+    $("#but").show();
+    $("#but1").hide();
+    $("#but2").hide();
+});
+  $("input").focus(function(){
+    $(this).css("background-color", "lightblue");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "pink");
+  });
+  $("#dor").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+ $("#dot1").click(function(){
+    $("#but1").show();
+    $("#but").hide();
+    $("#but2").hide();
+  });  
+$("#net").click(function(){
+    $("#but").show();
+    $("#but2").hide();
+    $("#but1").hide();  
+  });
+
+$("#net1").click(function(){
+    $("#but2").show();
+    $("#but").hide();
+    $("#but1").hide();  
+  });
+  
+$("#dun").click(function(){
+    $("#but1").show();
+    $("#but").hide();
+    $("#but2").hide();  
+  });
+});
+</script>
+<style>
+  body{
+  text-align:center;
+}
+  .ind1 {
+    background-color: green;
+   margin-top:100px;
+   margin-right:300px;
+   margin-bottom:100px;
+   margin-left:400px;
+   padding:30px 30px 30px 30px;   
+}
+  .ind2 {
+    background-color: pink;
+   margin-top:100px;
+   margin-right:300px;
+   margin-bottom:100px;
+   margin-left:400px;
+   padding:30px 30px 30px 30px;  
+}
+  .ind3 {
+    background-color: orange;
+    margin-top:100px;
+   margin-right:300px;
+   margin-bottom:100px;
+   margin-left:400px;
+   padding:30px 30px 30px 30px;   
+}
+</style>
+</head>
+<body>
+  <div class="ind1" id="but">
+<label for="Name">First Name:</label>
+ <input type="text" id="First name" name="name" placeholder="Enter your first name" required><br><br>
+<label for="Name">Second Name:</label>
+ <input type="text" id="Second name" name="name" placeholder="Enter your Second name" required><br><br>
+<label for="Email">Email:</label>
+ <input type="Email" name="email id="email" placeholder="Enter your mail" required><br><br>
+<label for="Age">Age:</label>
+ <input type="number" id="age" name="number" placeholder="Enter your age" value="number" required><br><br>
+<label for="number">Phone Number:</label>
+ <input type="number" id="number" name="number" placeholder="Enter your number" value="number" required><br><br>
+<button id="dot1">Next</button></div>
+<div class="ind2" id="but1">
+<label>Choose The Gender </label><br>
+ <input type="radio" name="Gender" value="Male"><label>Male</label><br>
+ <input type="radio" name="Gender" value="Female"><label>Female</label><br>
+ <input type="radio" name="Gender" value="Other"><label>Other</label><br><br>
+<button id="net">Previous</button>
+<button id="net1">Next</button></div>
+<div class="ind3" id="but2">
+<label>Choose The Marital status</label><br>
+ <input type="radio" name="Gender" value="Married"><label>Married</label><br>
+ <input type="radio" name="Gender" value="Unmarried"><label>Unmarried</label><br><br>
+<fieldset>
+  <legend>Adress:</legend>
+   <label>Village:</label><br>
+    <label>Street:</label><br>
+   <label>State:</label><br>
+   <label>Dt:</label>
+</fieldset><br>
+<button id="dun">previous</button>
+<button>submit</button>
+</div>
+</form>
+</body>
+</html>

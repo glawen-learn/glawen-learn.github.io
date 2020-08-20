@@ -1,0 +1,27 @@
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+ padding-top:15px 15px 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body{
+	background-color:white;
+	border:30px solid black;
+	text-align:center;
+	margin-left:500px;
+	margin-right:500px;
+	
+}
+.nani{ 
+   background-color:lightblue;
+
+}
+.dol{
+	border: 2px solid red;
+}
