@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title>2 Days Trail</title>
+<link rel="stylesheet" type="text/css" href="naveen1.css">
+</head>
+<body>
+<form>
+<div class="nani">
+<div class="page1">
+<h1>2 Days Trail</h1>
+<h2>Page-1</h2>
+<p>Are You.....</p>
+<input type="radio" name="recommend" value="Company">
+<label>Company</label><br>
+<input type="radio" name="recommend" value="individual">
+<label>Individual</label><br>
+<input type="radio" name="recommend" value="Student">
+<label>Student</label><br>
+<input type="radio" name="recommend" value="Job Seeker">
+<label>Job Seeker</label><br><br>
+<div class="alert alert-danger">
+<input type="text" class="list" placeholder="Name*"></div><br>
+<div class="alert alert-primary">
+<input type="text" class="list" placeholder="Company*"></div><br>
+<button type="button" class="button" id="btn">Next</button></div><br>
+<div class="page2">
+<h2>Page-2</h2>
+<div class="alert alert-warning">
+<input type="text" class="list" placeholder="Email*"></div><br>
+<div class="alert alert-danger">
+<input type="text" class="list" placeholder="Mobile*"></div><br>
+<button class="button" id="btn2">Previous</button>
+<button type="button" class="button" id="btn1">Next</button></div><br>
+<div class="page3">
+<h2>Page-3</h2>
+<div class="alert alert-secondary">
+<input type="text" class="list" placeholder="City*"></div><br>
+<div class="alert alert-success">
+<input type="text" class="list" placeholder="Looking for" ></div><br><br>
+<button type="button" id="button" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</form>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("h2").css("background-color", "pink");
+$("h2").css("color", "black");
+$("h2").css("border", "10px solid gray");
+$("h1").css("background-color", "yellow");
+$("h1").css("border", "10px solid orange");
+$("#btn").click(function(){
+$(".page1").hide();
+$(".page2").show();
+$(".page3").hide();
+});
+$("#btn1").click(function(){
+$(".page3").show();
+$(".page1").hide();
+$(".page2").hide();
+});
+$("#btn2").click(function(){
+$(".page2").hide();
+$(".page3").hide();
+$(".page1").show();
+});
+$(function(){
+$(".page1").show();
+$(".page2").hide();
+$(".page3").hide();
+});
+$(".list").focus(function(){
+$(this).css("background-color", "violet");
+});
+$(".list").blur(function(){
+$(this).css("background-color", "cyan");
+});
+$("#button").click(function(){
+var arrayOfInputFields=$("input");
+$.each(arrayOfInputFields, function(index, element){
+if($(element).val()==""){
+$(element).addClass("dol");
+}else{
+$(element).removeClass("dol");
+}
+});
+var arrayOfInputFieldsFrompage3= $(".page3 input");
+$.each(arrayOfInputFieldsFrompage3, function(index, element){
+if($(element).val()==""){
+$(".page1").hide();
+$(".page2").hide();
+$(".page3").show();
+$(element).addClass("dol");
+}else{
+$(element).removeClass("dol");
+}
+});
+var arrayOfInputFieldsFrompage2=$(".page2 input");
+$.each(arrayOfInputFieldsFrompage2, function(index, element){
+if ($(element).val()==""){
+$(".page1").hide();
+$(".page2").show();
+$(".page3").hide();
+$(element).addClass("dol");
+}else{
+$(element).removeClass("dol");
+}
+});
+var arrayOfInputFieldsFrompage1=$(".page1 input") 
+$.each(arrayOfInputFieldsFrompage1, function(index, element){
+if($(element).val()==""){
+$(".page1").show();
+$(".page2").hide();
+$(".page3").hide();
+$(element).addClass("dol");
+}else{
+$(element).removeClass("dol");
+}
+});
+});
+});
+</script>
+</body>
+</html>
