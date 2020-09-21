@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title> Form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script src="jquery-3.5.1.js" ></script>
+<script src="animation.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+
+<form name="myform"  class="form" onsubmit="validateForm()">
+<h1>Registration FORM</h1>
+
+
+<ul>
+<li class="title">What Do You Do?</li>
+<li class="fields">
+<label>*Occupation:</label><br>
+<input id="occupation" class="req" type="text" placeholder="occupation" required /><br>
+<label>Company:</label><br>
+<input id="company" class="req" type="text" placeholder="company" required /><br>
+<label>Company  Location:</label><br>
+<input id="location" class="req" type="text" placeholder="companylocation" required /><br>
+</li>
+</ul>
+
+
+<a href="tabbedform1.html"><input type="button" class="btn btn-primary"   value ="Previous"></a>
+<input type="submit"id="input" class="btn btn-primary"  value="Submit Form"/>
+</form>
+</body>
+</html>

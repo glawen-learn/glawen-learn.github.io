@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Jquery form</title>
+<script src="js/bootstap.js"></script>
+<script src="jquery-3.5.1.js"></script>
+<link rel="stylesheet" text="text/css" href="external.css">
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "deeppink");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "deepskyblue");
+  });
+  
+   $("h1").on({
+    mouseenter: function(){
+      $(this).css("background-color", "aqua");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+   $(".font").mouseup(function(){
+    alert("please fill this fieldset");
+  });
+  
+  
+  
+  
+ click: function validateForm(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<9){  
+  alert("Password must be at least 9 characters long.");  
+  return false;  
+  }  
+}  
+});
+</script>
+<style>
+P{
+font-size:50px;
+font-family:cooper;
+text-align:center;
+color:Orchid;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="main">Survey form</h1>
+<p>log in page</p>
+<form class="login_form"  action="page1.html" method="post"  name="myform" onsubmit="return validateForm()">
+<div class="font">Full Name:</div>
+<input autocomplete="off" type="text" placeholder="enter your fullname" required  name="name">
+     
+<div id="name_error">Please fill up your full Name</div>
+
+<div class="font font1">E-mail:</div>
+<input type="text" name="email" placeholder="enter your email" required name="email">
+
+<div id="email_error">Please fill up your correct email</div>
+
+<div class="font">Password:</div>
+<input type="password" name="password" placeholder="enter your password" required name="password"><br><br><br>
+
+<a href="page1.html">
+<input type="submit" value="Next" class="btn btn-success"></a>
+</form>
+</div>
+</body>
+</html>

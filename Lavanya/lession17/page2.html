@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>page2</title>
+<script src="js/bootstap.js"></script>
+<script src="jquery-3.5.1.js"></script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+var div=$(".d1");
+div.animate({height:'530px',  opacity: '1.9'}, "fast");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "9000");
+  
+  });
+
+  $("#b2").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+  });
+</script> 
+<style>
+body{
+background-image: linear-gradient(to right, rgba(105,80,90,600), rgba(5,90,40,15));
+} 
+h1{
+font-size:60px;
+color:aqua;
+font-family:Harrington;}
+</style>
+</head>
+<body>
+
+<h1>completed</h1>
+<button id="b1" class="btn btn-success " >click here</button>
+<br>
+<div class="d1" style="background:orange;height:400px;width:500px;position:absolute; text-align:center; font-size:20px;">😊 🙏 🤩 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button id="b2">Start Animation</button>
+<div style="background:#98bf21;height:100px;width:700px;position:absolute;">Thank you for filling this form</div>
+</body>
+</html>

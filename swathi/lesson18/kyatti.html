@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="swathi.css">
+<title>Employee Other Details</title>
+</head>
+<body>
+<form onsubmit="validateForm">
+<h1 id="jack">Employee Other Details</h1>
+<p class="kit">Fill all the Details</p>
+<div class="lavu">
+<label class="cat">Father Name:</label>
+<input type="text" class="cat" placeholder="enter fathername" required>
+<label class="cat">Mother Name:</label>
+<input type="text" class="cat" placeholder="enter mothername" required><br><br>
+<label class="cat">Contact Number:</label>
+<input type="number" class="cat" placeholder="enter contact number" required>
+<label class="cat">Blood Group:</label>
+<input type="text" class="cat" placeholder="enter bloodgroup" required><br><br>
+<label class="cat">Email:</label>
+<textarea rows="1" cols="65" class="cat" placeholder="enter email" required></textarea><br><br>
+<label class="cat">Date Of Birth:</label>
+<input type="number" class="cat" placeholder="enter dob" required>
+<label class="cat">Place Of Birth:</label>
+<input type="text" class="cat" placeholder="enter place of birth" required><br><br>
+<label class="cat">Nominee 1:</label>
+<input type="text" class="cat" placeholder="enter nominee1" required>
+<label class="cat">Nominee 2:</label>
+<input type="text" class="cat" placeholder="enter nominee2" required><br><br>
+<label class="cat">Address:</label>
+<textarea rows="2" cols="65" class="cat" placeholder="enter address" required>
+</textarea></div><br>
+<button type="button"><a href="index.html">Previous</a></button>
+<button type ="submit" id="btn">Submit</button></form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("h1").css("background-color", "white");
+$("h1").css("color", "red");
+$("h1").click(function(){
+$(".lavu").fadeOut();
+});
+$("h1").click(function(){
+$(".lavu").fadeIn();
+});
+$("h1").click(function(){
+$(".lavu").slideDown();
+});
+$(".kit").click(function(){
+$(".lavu").slideToggle(1000);
+});
+$("#btn").click(function(){
+alert("Thank You For Submitting");
+});
+});
+</script>
+</body>
+</html>

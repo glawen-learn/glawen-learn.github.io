@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>page1</title>
+<script src="js/bootstap.js"></script>
+<script src="jquery-3.5.1.js"></script>
+<link rel="stylesheet" text="text/css" href="external.css">
+
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+ 
+ 
+  
+ 
+});
+</script>
+
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1 class="main">survey form</h1>
+<div id="flip">Click to open Person deatails</div>
+<div id="panel">
+<form class="login_form"  method="post" name="form" onsubmit="validateForm()">
+<div class="font">father Name:</div>
+<input autocomplete="off" type="text" placeholder="enter your father name" required name="fathername">
+<div class="font">mother Name:</div>
+<input autocomplete="off" type="text" placeholder="enter your mother name" required name="mothername">
+<div class="font">Status:</div><input type="text" name="status" placeholder="married or unmarried"></input>
+</div>
+
+<button id="b1" type="button" class="btn btn-success"> <a href="index.html" id="previous">Previous</button>
+<button type="submit" class="btn btn-success"><a href="page2.html" id="submit">submit</button></a>
+</form>
+</div>
+</body>
+</html>

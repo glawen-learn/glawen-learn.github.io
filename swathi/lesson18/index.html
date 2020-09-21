@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="kyati.css">
+<title>Details of Employee</title>
+</head>
+<body>
+<form action="kyatti.html">
+<h1 class="corn">Details Of Employee</h1>
+<div class="alert alert-warning">
+<label class="text-dark">Employee Name:</label>
+<div class="alert alert-success">
+<input type="text" class="dol" placeholder="enter employee name" required><br><br>
+<label class="text-danger">Employee code:</label>
+<div class="alert alert-info">
+<input type="number" class="dol" placeholder="enter employee code" required><br><br>
+<label id="text-success">Device Code:</label>
+<div class="alert alert-danger">
+<input type="number" class="dol" placeholder="enter device code" required><br><br>
+<label class="text-warning">Company:</label>
+<div class="alert alert-success">
+<input type="text" class="dol" placeholder="enter company name" required><br><br>
+<label class="text-secondary">Department:</label>
+<div class="alert alert-warning">
+<input type="text" class="dol" placeholder="enter department" required><br><br>
+<label class="text-dark">Designation:</label>
+<div class="alert alert-secondary">
+<input type="text" class="dol" placeholder="designation" required><br><br>
+<label class="text-body">Employment type:</label>
+<div class="alert alert-dark">
+<input type="text" class="dol" placeholder="enter employment type" required><br><br>
+<label class="text-danger">Grade:</label>
+<div class="alert alert-body">
+<input type="text" class="dol" placeholder="enter grade" required><br><br>
+<label class="text-info">Date Of Joining:</label>
+<div class="alert alert-primary">
+<input type="number" class="dol" placeholder="enter date of joining" required><br><br>
+<label class="text-success">Status:</label>
+<div class="alert alert-info">
+<input type="text" class="dol" placeholder="enter status" required><br><br>
+<label class="text-warning">Aadhar Number:</label>
+<div class="alert alert-danger">
+<input type="number" class="dol" placeholder="enter aadhar number" required><br><br>
+<button type="submit"><a href="kyatti.html">Next</a></button></form>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("div").css("border", "2px solid black")
+$("h1").click(function(){
+$("div").toggle(3000);
+});
+$(".dol").focus(function(){
+$(this).css("background-color", "orange");
+});
+$(".dol").blur(function(){
+$(this).css("background-color", "pink");
+});
+});
+</script>
+</body>
+</html>
