@@ -5,119 +5,12 @@
 <title>Membership form</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
-
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<style>
-
-.text{
-text-align:right;
-}
-.left{
-text-align:left;
-}
-.size{ 
-width:70px;
-}
-.width{
-width:800px;
-}
-.bor{
-border:5px solid black;
-width:150px;
-height:200px;
-
-
-}
-.img{
-margin-left:0px;
-width:170px;
-
-
-}
-.height{
-margin-top:-190px;
-}
-.mem{
-border:1px solid black;
- 
-text-align:center;
-font-size:20px;
-
-}
-.small{
-width:300px;
-
-}
-.date{
-margin-left:80px;
-}
-.size1{
-font-size:40px;
-
-}
-.size2{
-font-size:20px;
-}
-.sma{
-width:100px;
-}
-.mid{text-align:center;}
-@media(max-width:600px){img{width:40px;height:100px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:18px;}.font1{font-size:25px;}.font2{font-size:15px;}label{font-size:13px;}
-}
-@media(max-width:360px){img{width:5px;height:70px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:15px;}.font1{font-size:20px;}.font2{font-size:13px;}label{font-size:10px;}
-}
-.modal-content {
-  border-radius: 0px;
-  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.7);
-}
-
-.modal-backdrop.show {
-  opacity: 0.75;
-}
-
-.loader-txt {
-  p {
-    font-size: 13px;
-    color: #666;
-    small {
-      font-size: 11.5px;
-      color: #999;
-    }
-  }
-}
-
-#output {
-  padding: 25px 15px;
-  background: #222;
-  border: 1px solid #222;
-  max-width: 350px;
-  margin: 35px auto;
-  font-family: 'Roboto', sans-serif !important;
-  p.subtle {
-    color: #555;
-    font-style: italic;
-    font-family: 'Roboto', sans-serif !important;
-  }
-  h4 {
-    font-weight: 300 !important;
-    font-size: 1.1em;
-    font-family: 'Roboto', sans-serif !important;
-  }
-  p {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 0.9em;
-    b {
-      text-transform: uppercase;
-      text-decoration: underline;
-    }
-  }
-}
-</style>
 <body>
 <div class="container">
 <div class="jumbotron">
@@ -132,10 +25,10 @@ width:100px;
 <p class="size2 font2">(AN ORGANISATION FOR CULTURAL,SOCIAL & LITERARY DEVELOPMENT)</p>
 <p class="size2 font"><b>REGISTERED UNDER THE ANDHRAPRADESH SOCIETIES ACT35TT OF 2001,REGISTRATION NO:496/2020</b></p></div><div class="col-md-3 col-sm-1">
 <div class="bor">
-   <input type="file" class="imgFile">
-   <div class="uploadFile">
-     <img class="img" src="" alt="yourImg" height="150" width="40" id="imgup"/>
-   </div>
+<input type="file" class="imgFile" >
+<div class="uploadFile">
+<img  src="" alt="" height="155" width="140" id="imgUp"  />
+</div>
 </input>
 </div>
 </div>
@@ -149,8 +42,10 @@ by Cash / Cheque / D.D</b></p>
 </br>
 </br>
 <div class="text">
-<input type="file" accept="image/*" name="signature of Applicant"  placeholder="signature" ></input><br><label><b>Signature of Applicant</b></label>
-<!-- <img class="sma" src="" height="150" width="40"/> -->
+<input type="file" class="imgFile1" id="file1"></input>
+<br>
+<img  src="" height="50" width="190" alt="" id="imgUp1"/><br><label>
+<b>Signature of Applicant</b></label>
 </div>
 </br>
 <br>
@@ -218,67 +113,7 @@ by Cash / Cheque / D.D</b></p>
 </div>
 </div>
 </div>
-<script>
-  var submit = $("#submitButton");
-$(document).ready(function(){
-    $(submit).click(function(){
-     var formData = $("form").serialize();
-
-		$("#loadMe").modal({
-		  backdrop: "static", 
-		  keyboard: false, 
-		  show: true 
-		});	  
-		var jqxhr = $.post( "https://shrishakthi.herokuapp.com/memberships", formData, function() {
-
-		})
-		  .done(function() {
-			setTimeout(function() {
-			  $("#loadMe").modal("hide");
-			}, 500);
-			alert( "Thanks, your information saved successfully" );
-
-			
-		  })
-		  .fail(function() {
-			$("#loadMe").modal("hide");		  
-			alert( "Sorry, there is an error, please try again." );
-
-		  })
-     
-	  });
-   });
-
-   window.addEventListener('load', function() {
-  document.querySelector('input[type="file"]').addEventListener('change', function() {
-      if (this.files && this.files[0]) {
-          var img = document.getElementById('imgup');
-          img.src = URL.createObjectURL(this.files[0]); 
-          img.onload = imageIsLoaded;
-      }
-  });
-});
-
-function imageIsLoaded() { 
-  alert(this.src);  
-}
-
-// window.addEventListener('load', function() {
-//   document.querySelector('input[type="file"]').addEventListener('change', function() {
-//       if (this.files && this.files[0]) {
-//           var img = document.getElementsByClassName('sma');
-//           img.src = URL.createObjectURL(this.files[0]); 
-//           img.onload = imageIsLoaded;
-//       }
-//   });
-// });
-
-// function imageIsLoaded() { 
-//   alert(this.src);  
-// }
-
-   
-
+<script src="app.js">
 </script>
 </body>
 </html>
