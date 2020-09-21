@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Membership form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+.text{
+text-align:right;
+}
+.left{
+text-align:left;
+}
+.size{ 
+width:70px;
+}
+.width{
+width:800px;
+}
+.bor{
+border:5px solid black;
+width:150px;
+height:200px;
+
+
+}
+.img{
+margin-left:0px;
+width:170px;
+
+
+}
+.height{
+margin-top:-190px;
+}
+.mem{
+border:1px solid black;
+ 
+text-align:center;
+font-size:20px;
+
+}
+.small{
+width:300px;
+
+}
+.date{
+margin-left:80px;
+}
+.size1{
+font-size:40px;
+
+}
+.size2{
+font-size:20px;
+}
+.sma{
+width:100px;
+}
+.mid{text-align:center;}
+@media(max-width:600px){img{width:40px;height:100px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:18px;}.font1{font-size:25px;}.font2{font-size:15px;}label{font-size:13px;}
+}
+@media(max-width:360px){img{width:5px;height:70px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:15px;}.font1{font-size:20px;}.font2{font-size:13px;}label{font-size:10px;}
+}
+.modal-content {
+  border-radius: 0px;
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.loader-txt {
+  p {
+    font-size: 13px;
+    color: #666;
+    small {
+      font-size: 11.5px;
+      color: #999;
+    }
+  }
+}
+
+#output {
+  padding: 25px 15px;
+  background: #222;
+  border: 1px solid #222;
+  max-width: 350px;
+  margin: 35px auto;
+  font-family: 'Roboto', sans-serif !important;
+  p.subtle {
+    color: #555;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  h4 {
+    font-weight: 300 !important;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  p {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 0.9em;
+    b {
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}
+</style>
+<body>
+<div class="container">
+<div class="jumbotron">
+<div class="row"><div class="col-md-3 col-sm-1">
+<img src="img/logo.jpg">
+
+</div>
+
+<div class="col-md-6 col-sm-1">
+<p class="size1 font1"><b>SHRI SHAKTHI SOCIETY</b></p>
+<p class="size2 font"><b>CHARITABLE ORGANISATION</b></p>
+<p class="size2 font2">(AN ORGANISATION FOR CULTURAL,SOCIAL & LITERARY DEVELOPMENT)</p>
+<p class="size2 font"><b>REGISTERED UNDER THE ANDHRAPRADESH SOCIETIES ACT35TT OF 2001,REGISTRATION NO:496/2020</b></p></div><div class="col-md-3 col-sm-1">
+<div class="bor">
+   <input type="file" class="imgFile">
+   <div class="uploadFile">
+     <img class="img" src="" alt="yourImg" height="150" width="40" id="imgup"/>
+   </div>
+</input>
+</div>
+</div>
+</div>
+<br><br>
+<p class="mid">43-4-19,Railway New Colony, Visakhapatnam-530016,INDIA</p>
+<br><br>
+<p><b>I Wish to become a member of SHRI SHAKTHI SOCIETY and enclose herewith Rs<input  type="text" class="size">
+by Cash / Cheque / D.D</b></p>
+ 
+</br>
+</br>
+<div class="text">
+<input type="file" accept="image/*" name="signature of Applicant"  placeholder="signature" ></input><br><label><b>Signature of Applicant</b></label>
+<!-- <img class="sma" src="" height="150" width="40"/> -->
+</div>
+</br>
+<br>
+<form action="#">
+<div class="row">
+<div class="col-md-3">
+<label><b>Name:</b></label></div><input type="text" name="name" class="form-control width" placeholder="please enter your name" required></input>
+</div><br>
+<div class="row">
+<div class="col-sm-3">
+<label><b>Date Of Birth:</b></label></div><input class="form-control width" name="DOB" type="text" placeholder="DD/MM/YY" required></input></div><br>
+<div class="row"> <div class="col-sm-3"><label><b>Nick Name:</b></label></div>
+<input class="form-control width" name="nickName" type="text"></input></div><br>
+<div class="row"><div class="col-md-3">
+<label><b>Educational Qualification:</b></label></div><input type="text" name="qualification" class="form-control width"></input>
+</div><br>
+<div class="row"><div class="col-md-3">
+<label><b>Occupation Particulars:</b></label></div><input type="text" name="Occopation"class="form-control width" ></input></div><br>
+<div class="row "><div class="col-md-3">
+<input type="checkbox" name=" checkbox"><label><b>Residential Address:</b></label></div><textarea  row="2" name="residential Address" class="form-control width row-2" placeholder="residential address"></textarea></div><br>
+<div class="row"><div class="col-md-3">
+
+<label><b>Telephone No:</b></label></div>
+<input class="form-control small" name="Teliphon No" type="text"></input></div><br>
+<div class="row"><div class="col-md-3">
+<label><b>Mobile No:</b></label></div><input class="form-control small " type="text" name="Mobile No" required></input></div></br>
+<div class="row"><div class="col-md-3">
+<input type="checkbox" name="checkbox"><label><b>Office Address:</b></label></div><textarea row="2" name="Office Address" class="form-control width"placeholder="Office Address"></textarea></div><br>
+<div class="row"><div class="col-md-3">
+
+<label><b>Telephone No:</b></label></div><input class="form-control small " type="text" name="Teliphon No" ></input></div><br>
+<div class="row"><div class="col-md-3">
+
+<label><b>Mobile No:</b></label></div><input class="form-control small" type="text" name="Mobile No" ></input></div><br><div class="row"><div class="col-md-3">
+
+<label><b>Email:</b></label></div><input class="form-control small" type="email" name="Email" placeholder="Email address..." required></input></div>
+</br></br></br>
+
+<p><b><input type="checkbox" name="checkbox">I accept membership into Shri Shakthi Society and that the standards are limited to persons of good moral character and reputation. I recognise the importance of rendering personal service to my community in cooperation with other civic minded persons. I understand the membership is not valid until approved by the society's Board of Directors.
+</b></p>
+<br><br>
+
+<div class="left">
+<label><b>Application date:</b> </label><input type="text" name="Application date" placeholder="DD/MM/YY" required></input>
+</div>
+</br>
+<p class="text"><b>Approved by board</b></p>
+<br><br>
+<br>
+<p class="text"><b>Gen.sec/President/C.O.O.</b></p>
+<button type ="button" class="btn btn-primary btn-lg btn-block" id="submitButton">Submit</button>
+ 
+</form>
+<div class="modal fade" id="loadMe" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="loader"></div>
+        <div clas="loader-txt">
+          <p>Please wait we are updating your information. <br><br><small></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+  var submit = $("#submitButton");
+$(document).ready(function(){
+    $(submit).click(function(){
+     var formData = $("form").serialize();
+
+		$("#loadMe").modal({
+		  backdrop: "static", 
+		  keyboard: false, 
+		  show: true 
+		});	  
+		var jqxhr = $.post( "https://shrishakthi.herokuapp.com/memberships", formData, function() {
+
+		})
+		  .done(function() {
+			setTimeout(function() {
+			  $("#loadMe").modal("hide");
+			}, 500);
+			alert( "Thanks, your information saved successfully" );
+
+			
+		  })
+		  .fail(function() {
+			$("#loadMe").modal("hide");		  
+			alert( "Sorry, there is an error, please try again." );
+
+		  })
+     
+	  });
+   });
+
+   window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img = document.getElementById('imgup');
+          img.src = URL.createObjectURL(this.files[0]); 
+          img.onload = imageIsLoaded;
+      }
+  });
+});
+
+function imageIsLoaded() { 
+  alert(this.src);  
+}
+
+// window.addEventListener('load', function() {
+//   document.querySelector('input[type="file"]').addEventListener('change', function() {
+//       if (this.files && this.files[0]) {
+//           var img = document.getElementsByClassName('sma');
+//           img.src = URL.createObjectURL(this.files[0]); 
+//           img.onload = imageIsLoaded;
+//       }
+//   });
+// });
+
+// function imageIsLoaded() { 
+//   alert(this.src);  
+// }
+
+   
+
+</script>
+</body>
+</html>
