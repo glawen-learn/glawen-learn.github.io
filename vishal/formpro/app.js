@@ -1,9 +1,6 @@
+var submit = $("#submitButton");
 $(document).ready(function(){
-    $("#submitButton").click(function(){
-		if(!$("input[name='consent']").is(":checked")){
-			alert("Please accept terms and conditions");
-			return false;
-		}
+    $(submit).click(function(){
      var formData = $("form").serialize();
 
 		$("#loadMe").modal({
@@ -29,17 +26,30 @@ $(document).ready(function(){
 		  })
      
 	  });
-	  
-	$(".bor").click(function () {
-		$("#imgFile").trigger('click');
-	});	  
-	  
-  $("#imgFile").change(function() {
+   });
+
+   window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
       if (this.files && this.files[0]) {
           var img = document.getElementById('imgUp');
           img.src = URL.createObjectURL(this.files[0]);
       }
-  });	  
-	  
-   });
+  });
+});
 
+function imageIsLoaded() { 
+alert(this.src);  
+}
+
+window.addEventListener('load', function() {
+  document.querySelector('input[id="file1"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img1 = document.getElementById('imgUp1');
+          img1.src = URL.createObjectURL(this.files[0]);
+      }
+  });
+});
+
+function imageIsLoaded() { 
+  alert(this.src);  
+}
