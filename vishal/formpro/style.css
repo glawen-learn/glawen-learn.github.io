@@ -51,9 +51,15 @@
     width:100px;
     }
     .mid{text-align:center;}
-    @media(max-width:600px){img{width:40px;height:100px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:18px;}.font1{font-size:25px;}.font2{font-size:15px;}label{font-size:13px;}
+	img{
+		height:185px;
+	}
+	.hide{
+		display:none;
+	}
+    @media(max-width:1440px){img{width:110px;height:150px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:18px;}.font1{font-size:25px;}.font2{font-size:15px;}label{font-size:13px;}
     }
-    @media(max-width:360px){img{width:5px;height:70px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:15px;}.font1{font-size:20px;}.font2{font-size:13px;}label{font-size:10px;}
+    @media(max-width:360px){img{width:110px;height:145px;}p{font-size:10px;}.bor{width:120px;height:150px;}.font{font-size:15px;}.font1{font-size:20px;}.font2{font-size:13px;}label{font-size:10px;}
     }
     .modal-content {
       border-radius: 0px;
