@@ -1,0 +1,160 @@
+<style>
+ 
+
+
+ #Support_us{
+background-color:navy;
+color:white;
+  text-align:center;
+font-size: 90px;
+height:200px;
+margin-top:30px;
+}
+#Support_us{
+		background-color:navy;
+		color:white;
+		text-align:center;
+		font-size: 90px;
+		height:200px;
+		margin-top:70px;
+	}
+	.Support_us{
+     font-size:60px;
+    }
+	.get_involved{
+		text-align:center;
+		margin:5px 30px 30px 30px;
+		padding:5px 30px 30px 30px;
+	}
+	.para_1{
+     font-size:21px;
+	}
+	.event{
+		background-color:#e60073;
+		color: white;
+		border:solid3px #e60073;
+		padding:8px 24px 8px 24px;
+}
+.set3{
+		text-align:center;
+		margin:20px;
+		padding:20px;
+	}
+img{
+		width:100%;
+		height:auto;
+   }	
+h1{
+		padding: 40px 10px 10px 3px;
+		font-family: 'Patua One', cursive;
+		font-size:45px;
+	}
+.p_here{
+	font-size:20px;
+	
+}	
+.block_s{
+		width:100%;
+		color:white;
+		padding:10px 0px 90px 0px;
+		margin:0px 0px 60px 0px;
+		text-align:center;
+	}
+	.block1{
+     background-color: #cc0066;
+	}
+
+.block2{
+     background-color:skyblue;
+	}
+
+.block3{
+     background-color:navy;
+	}	
+.set4{
+		text-align:center;
+		margin:80px 0px 0px 0px;
+	}
+.online{
+		background-color:white;
+		color:navy;
+		padding:9px 25px 9px 25px;
+	}
+	#lst_blck{
+	text-align:center;
+	margin:10px 50px 70px 20px;
+	}
+	---
+.update_email{
+		outline:none;
+		border:solid 3px white;
+	}
+.update_para{
+     color:red;
+	}
+.update_btn{
+		background-color:#cc3366;
+		text-align:center;
+		outline:none;
+		border:solid3px #cc3366;
+		color:white;
+		padding:10px 190px 10px 190px;
+	}
+
+
+
+
+      
+
+.nav1{
+    
+    background-color : rgb(17, 7, 7);
+    opacity: 0.8;
+    margin-top:-8px;
+}
+.nav2{
+    background-color:#c84869;
+    margin-left:1263px;
+    margin-top:-110px;
+}
+.space1{
+   
+    color:white;
+   margin-left:600px;
+   width:665px;
+}
+.space2{
+    
+    font-size:30px;
+    color: white;
+    text-align:center;
+    
+       margin-top:30px;
+}
+.font{
+    font-size:30px;
+    color:white;
+    
+}
+.imgsize{
+    width:50px;
+    height:50px;
+}
+@media(max-width:600px){.space1{color:white; margin-left:200px;}.nav2{ background-color:#c84869; margin-left:0px; margin-top:-5px;text-align:center;height:50px; width:100px;}
+.space2{
+    
+    font-size:30px;
+    color: white;
+    margin-left:-60px;;
+    
+       margin-top:0px;
+}
+}
+@media(max-width:900px){.nav1{width:440px; }}
+@media(max-width:500px){.nav1{width:320px; }}
+
+@media(max-width:360px){.nav1{width:410px; }}
+@media(max-width:280px){.nav1{width:320px; }}
+  
+  </style>
+  
