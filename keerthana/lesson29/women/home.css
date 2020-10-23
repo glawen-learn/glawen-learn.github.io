@@ -1,0 +1,178 @@
+
+.space1{
+   
+    color:white;
+   margin-left:600px;
+   width:665px;
+}
+.space2{
+    
+    font-size:30px;
+    color: white;
+    text-align:center;
+    font-family: 'Patua One', cursive;
+       margin-bottom:20px;
+       margin-left:50px;
+}
+.font{
+    font-size:30px;
+    color:white;
+    font-family: 'Patua One',cursive;
+    
+}
+.color{
+   background-color: rgb(255, 0, 0);
+
+   opacity:0.8;
+}
+.font1{
+    font-size:60px;
+    font-style:bold;
+    color:white;
+    text-align:center;
+    margin-top:-300px;
+    margin-bottom:100px;
+    float:scroll;
+    font-family: 'Patua One', cursive;
+}
+.position{
+    width:1600px;
+    height:800px;
+    margin-top: -10px;   
+    
+}
+.color1{
+    background-color:#c84869;
+    color:white;
+    height:150px;
+    text-align:center;
+    margin-top:20px;
+}
+.color2{
+    background-color:rgb(80, 53, 233);
+    color:white;
+    height:150px;
+    text-align:center;
+    margin-top:20px;
+}
+.color3{
+    background-color:rgb(30, 30, 99);
+    color:white;
+    height:150px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.nav1{
+    
+    background-color : rgb(17, 7, 7);
+    opacity: 0.8;
+    margin-top:-8px;
+}
+.nav2{
+    background-color:#c84869;
+    margin-left:1265px;
+    margin-top:-110px;
+}
+.imgsize{
+    width:50px;
+    height:50px;
+}
+.latestfont{
+font-size:70px;
+text-align:center;
+margin-top:80px;
+margin-bottom:40px;
+}
+.textcenter{
+    text-align:center;
+    
+    
+}
+.space3{
+   margin-top:30px;
+   margin-bottom:40px; 
+}
+.btns{
+    margin-top:50px;
+    margin-left:800px;
+}
+.background{
+    background-color:rgb(36, 36, 116);
+    padding:50px;
+    text-align:center;
+    color:white;
+    margin-top:50px;
+}
+.font2{
+    font-size:40px;
+    
+}
+
+.bggg{
+    height:190px;
+    width:40px;
+    background-color:rgb(17, 17, 78);
+    margin-left:1480px;
+    margin-top:-400px;
+    padding:10px;
+    display:block;
+    position:fixed;
+    }
+.joinfont{
+    background-color: blue;
+    text-align: center;
+    color:white;
+    padding-top:150px;
+}
+.img4{
+    width:1000px;
+    height:500px;
+    margin-left:-15px;
+    
+}
+.blue{
+    background-color:rgb(20, 20, 90);
+    height:50px;
+    color:white;
+    padding-top:10px;
+}
+.foter{
+    margin-top:30px;
+}
+#email{
+    border-bottom:1px solid black;
+    border-top:1px solid white;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    border-width: 0 0 1px 0;
+}
+.joinus{font-family: 'Alfa Slab One', cursive;
+    font-family: 'Suez One', serif;}
+@media(max-width:600px){.space1{color:white; margin-left:200px;}.nav2{ background-color:#c84869; margin-left:0px; margin-top:-5px;text-align:center;height:50px; width:100px;}
+.space2{font-size:30px;color: white;margin-left:-60px;; margin-top:0px;}
+ .font1{font-size:30px;font-style:bold;color:white;text-align:center;margin-top:-100px;margin-bottom:100px;float:scroll;font-family: 'Patua One', cursive;}
+.color1{ margin-top:-89px; }.color1-h1{font-size:30px; }.color1-h4{font-size:20px;}
+.color2{margin-top:0px;}.color2-h1{font-size:30px; }.color2-h4{font-size:20px;}
+.color3{margin-top:0px;}.color3-h1{font-size:30px; }.color3-h4{font-size:20px;}
+.latestfont{font-size:30px; text-align:center; margin-top:80px; margin-bottom:40px;}
+.font2{font-size:20px;}
+.img4{width:450px;height:500px;margin-left:-15px;}
+.position{width:600px;height:500px;}
+.position-fixed{position-fixed;}}
+@media(max-width:900px){.position{width:440px;height:500px;}.nav1{ width:440px; 
+}}
+@media(max-width:500px){.position{width:370px;height:300px;}.nav1{
+    width:320px; 
+ }
+}
+@media(max-width:360px){.position{margin-top:5px;width:500px;height:350px;}.nav1{width:360px;}
+.color1{ margin-top:-89px;}.color1-h1{font-size:30px; }.color1-h4{font-size:20px;}
+.color2{margin-top:0px;}.color2-h1{font-size:30px; }.color2-h4{font-size:20px;}
+.color3{margin-top:0px;}.color3-h1{font-size:30px; }.color3-h4{font-size:20px;}
+}
+@media(max-width:280px){.position{width:370px;height:300px;}.nav1{
+    width:320px; 
+ }}
+/*@media(max-width:1500px){.navdevice1{display: grid; grid-template-columns: 10fr 2fr;}  
+}*/
