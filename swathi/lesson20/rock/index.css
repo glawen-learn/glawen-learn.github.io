@@ -1,0 +1,108 @@
+.index{
+    text-align:center;
+    font-size:80px;
+    background-color:rgb(20, 20, 90);
+    padding:50px;
+    color:white;   
+}
+.index1{
+    text-align:center;
+    background-color:rgb(20, 20, 90);
+    padding:50px;
+    color:white;
+
+}
+.index2{
+    background-color:rgb(236, 55, 124);
+    padding:8px;
+    width:120px;
+    border:0;
+    color:white;
+    margin-left:100px;
+   
+}
+.container-fluid{
+  text-align:center;
+  background-color:rgb(20, 20, 90);
+  color:white;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom:0px;
+  font-size:12px;
+
+  
+    
+}
+.donate{
+    padding:8px;
+    border:0;
+    width:180px;
+    font-size:18px;
+    color:rgb(21, 11, 114);
+}
+.p{
+    font-size:35px;
+}
+.email{
+  border-top:white;
+  border-right:white;
+  border-left: white; 
+  border-bottom:1px solid black;
+  margin-top:20px;
+  margin-bottom:20px;
+  width:500px;
+
+}
+.index3{
+    background-color:rgb(236, 55, 124);
+    width:500px;
+    height:40px;
+    color:white;
+   border:0;
+
+}
+.block{
+    margin-top:60px;
+    margin-bottom:100px;
+}
+.p1{
+    margin-top:-15px;
+    font-size:15px;
+    margin-bottom:10px;
+    color:black;
+}
+.par{
+    margin-bottom:50px;
+}
+.left{
+    margin-left:100px;
+}
+.right{
+    margin-left:300px;
+}
+.top{
+    margin-left:-100px;
+    font-size:25px;
+}
+.index4{
+    margin-top:150px;
+    margin-bottom:150px;
+    cursor:pointer;
+}
+.index5{
+    margin-bottom:150px;
+}
+.Margin{
+    border-bottom:1px solid black;
+    margin-left:300px;
+    margin-right:300px;
+    margin-top:-100px;
+    margin-bottom:60px;
+}
+span.small{
+    font-size:15px;
+}
+.back{
+    margin-left:-210px;
+}
