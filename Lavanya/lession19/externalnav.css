@@ -1,15 +1,13 @@
 <style>
- 
-
-
- #Support_us{
-background-color:navy;
-color:white;
-  text-align:center;
-font-size: 90px;
-height:200px;
-margin-top:30px;
-}
+#Support_us{
+		background-color:navy;
+		color:white;
+		text-align:center;
+		font-size: 90px;
+		height:200px;
+		margin-top:30px;
+	}
+	
 #Support_us{
 		background-color:navy;
 		color:white;
@@ -18,23 +16,28 @@ margin-top:30px;
 		height:200px;
 		margin-top:70px;
 	}
-	.Support_us{
-     font-size:60px;
-    }
-	.get_involved{
+	
+.Support_us{
+        font-size:60px;
+		animate__slideInUp
+	}
+	
+.get_involved{
 		text-align:center;
 		margin:5px 30px 30px 30px;
 		padding:5px 30px 30px 30px;
 	}
-	.para_1{
-     font-size:21px;
+	
+.para_1{
+		font-size:21px;
 	}
-	.event{
+	
+.event{
 		background-color:#e60073;
 		color: white;
 		border:solid3px #e60073;
 		padding:8px 24px 8px 24px;
-}
+	}
 .set3{
 		text-align:center;
 		margin:20px;
@@ -49,18 +52,20 @@ h1{
 		font-family: 'Patua One', cursive;
 		font-size:45px;
 	}
-.p_here{
-	font-size:20px;
 	
-}	
+.p_here{
+		font-size:20px;
+	}
+	
 .block_s{
 		width:100%;
 		color:white;
-		padding:10px 0px 90px 0px;
-		margin:0px 0px 60px 0px;
+		padding:10px 0px 70px 0px;
+		margin:0px 0px 30px 0px;
 		text-align:center;
 	}
-	.block1{
+	
+.block1{
      background-color: #cc0066;
 	}
 
@@ -70,42 +75,64 @@ h1{
 
 .block3{
      background-color:navy;
-	}	
+	}
+	
 .set4{
 		text-align:center;
 		margin:80px 0px 0px 0px;
 	}
+	
 .online{
 		background-color:white;
 		color:navy;
 		padding:9px 25px 9px 25px;
 	}
-	#lst_blck{
-	text-align:center;
-	margin:10px 50px 70px 20px;
+	
+.lst_blck{
+	margin:5px 50px 70px 50px;
+	padding:2px 5px 40px 30px;
+
 	}
-	---
+.last_p{
+	text-align:center;
+	padding:8px 30px 8px 30px;
+	background-color: #000066;
+	color:white;
+	font-size:13px;
+	
+}
+
 .update_email{
 		outline:none;
 		border:solid 3px white;
 	}
+	
 .update_para{
      color:red;
 	}
+	
 .update_btn{
 		background-color:#cc3366;
 		text-align:center;
 		outline:none;
 		border:solid3px #cc3366;
 		color:white;
-		padding:10px 190px 10px 190px;
+		padding:5px 150px 5px 150px;
+		margin-top:20px 
 	}
-
-
-
-
-      
-
+	
+.update_email{
+		
+		border-width: 0 0 1px;
+		border-color:black;
+		width:360px;		
+	}
+.update_email:focus{
+		boder-color:green
+	}
+	
+	
+	
 .nav1{
     
     background-color : rgb(17, 7, 7);
@@ -156,5 +183,6 @@ h1{
 @media(max-width:360px){.nav1{width:410px; }}
 @media(max-width:280px){.nav1{width:320px; }}
   
-  </style>
+
+</style>
   
